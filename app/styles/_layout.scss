@@ -1,0 +1,138 @@
+.text-center {
+  text-align: center;
+}
+.clear-fix {
+  clear:both;
+}
+.icons {
+  display: none;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  .flexbox & {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    main {
+      flex: 1;
+    }
+  }
+}
+header {
+  height: 350px;
+  background-size: cover;
+  position: relative;
+  .nav.navbar-nav {
+    margin-top: 10px;
+  }
+  .scroll-down {
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: 20px;
+    .icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+    }
+  }
+  .page-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 100px;
+  }
+  .profile {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+    .caret {
+      bottom: 0;
+      right: 0;
+      border-top-width: 8px;
+      position: absolute;
+    }
+  }
+  .search-form {
+    margin-top: 10px;
+  }
+}
+main {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h1, h2, h3, h4 {
+    font-weight: bold;
+    color: #304661;
+  }
+  color: #9797A8;
+  font-size: 16px;
+}
+section {
+  &.flash-block {
+    text-align: center;
+    padding: 50px 0;
+  }
+  h2.section-title {
+    color: #EEA75D;
+    text-transform: uppercase;
+    font-size: 16px;
+    strong {
+      display: block;
+      margin: 15px 0;
+      color: #304661;
+      font-size: 24px;
+      text-transform: none;
+    }
+  }
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+}
+footer {
+  background: #2B2D2E;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px 0;
+  .icon {
+    height: 34px;
+    width: 34px;
+    fill: #fff;
+    display: inline-block;
+    transition: 0.5s all;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0 0 15px;
+    &:hover {
+      .icon {
+        -webkit-filter: drop-shadow(2px 2px  #000);
+        -moz-filter: drop-shadow(2px 2px  #000);
+        -ms-filter: drop-shadow(2px 2px  #000);
+        filter: drop-shadow(2px 2px  #000);
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .col-sm-4 {
+    &:nth-child(3n+4) {
+      clear: left;
+    }
+  }
+  .col-sm-3 {
+    &:nth-child(4n+5) {
+      clear: left;
+    }
+  }
+}

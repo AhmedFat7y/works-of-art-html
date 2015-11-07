@@ -1,0 +1,43 @@
+header(class=page === 'home' ? 'home' : '')
+  .container-fluid
+    .row
+      .col-sm-12
+        nav(role="navigation").navbar.navbar-default
+          .navbar-header
+            button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle.collapsed
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href="index.html").navbar-brand: img(src="images/logo.png", alt="Journey", title="Journey")
+          .collapse.navbar-collapse.navbar-ex1-collapse
+            ul.nav.navbar-nav
+              include _navlinks
+            .col-sm-3.col-md-3.search-form
+              form(role='search')
+                .input-group
+                  input#srch-term.form-control(type='text', placeholder='Author / Title / Genre', name='srch-term')
+                  .input-group-btn
+                    button.btn.btn-default(type='submit')
+                      i.glyphicon.glyphicon-search
+            -if (loggedIn && loggedIn === true) {
+            .col-sm-1.col-md-1.pull-right
+              .dropdown
+                a.profile.dropdown-toggle(href="#", id="profile-menu", data-toggle="dropdown", aria-expanded="true")
+                  img(src="images/default.png")
+                  span.caret
+                ul.dropdown-menu(role="menu", aria-labelledby="profile-menu")
+                  li(role="presentation")
+                    a(href="profile.html", role="menuitem" tabindex="-1") My Account
+                    a(href="logout.html", role="menuitem" tabindex="-1") Logout
+            -}
+        - if(page === 'home-journey') {
+        .slide
+          h1 Great organizations need great consultatns
+          p Our obligation is to maximize your emplyees' performance
+          p
+            a(href="#").btn.btn-lg.btn-primary Discover our product
+        - } else {
+          h1.page-title #{pagetitle}
+        - }
+  a.scroll-down(href="#"): svg.icon <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-arrow-down"></use>

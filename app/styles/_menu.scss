@@ -1,0 +1,84 @@
+.navbar-default {
+  margin-top: 30px;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .navbar-nav {
+    text-transform: uppercase;
+    & > .active,
+    & > li {
+      margin: 0 15px;
+      & > a,
+      & > a:hover {
+        color: #fff;
+        background: transparent;
+        padding: 5px 0;
+      }
+    }
+    .active {
+      border-bottom: 2px solid #fff;
+      font-weight: bold;
+    }
+    & > .contact {
+      border: 0;
+      & > a,
+      & > a:hover {
+        border: 2px solid #fff;
+        border-radius: 20px;
+        padding: 5px 20px
+      }
+      &.active {
+        & > a,
+        & > a:hover {
+          background: #fff;
+          color: #8B928B;
+        }
+        .icon {
+          fill: #8B928B;
+        }
+      }
+    }
+    .icon {
+      fill: #fff;
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+}
+header .navbar-default .navbar-nav > .active > a,
+header .navbar-default .navbar-nav > .active > a:hover,
+header .navbar-default .navbar-nav > li > a,
+header .navbar-default .navbar-nav > li > a:hover {
+  color: #0C9648
+}
+header .navbar-default .navbar-nav .active {
+  border-bottom-color: #0C9648;
+}
+header nav.navbar-default {
+  background: #fff;
+  border-radius: 0;
+  margin: 0;
+  padding: 30px 0;
+}
+header .navbar-brand img {
+  max-width: 100%;
+  position: relative;
+  top: -30px;
+}
+header .navbar-right {
+  margin-top: 10px;
+}
+header .navbar-default {
+  box-shadow: -500px 0 0 #fff, 500px 0 0 #fff
+}

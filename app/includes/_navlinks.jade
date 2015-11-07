@@ -1,0 +1,38 @@
+li(class=page ==='home' ? 'active': ''): a(href="home.html") Home
+li.dropdown(class=page ==='user-readings' || page==='user-writings' || page==='all-novels' ? 'active': '')
+  -if (loggedIn && loggedIn === true) {
+    a.dropdown-toggle(href="#", id="about-menu", data-toggle="dropdown", aria-expanded="true") Novels
+      span.caret
+    ul.dropdown-menu(role="menu", aria-labelledby="about-menu")
+      li(role="presentation")
+        a(href="user-readings.html", role="menuitem" tabindex="-1") My Novels
+        a(href="user-writings.html", role="menuitem" tabindex="-1") My Writings
+        a(href="all-novels.html", role="menuitem" tabindex="-1") All Novels
+  -} else {
+    a(href="novels.html") Novels
+  -}
+
+li(class=page ==='products' ? 'active': ''): a(href="#") Audio
+
+//- li.dropdown(class=page ==='clients' || page==='testimonials' || page==='stories'? 'active': '')
+//-   a.dropdown-toggle(href="#", id="clients-menu", data-toggle="dropdown", aria-expanded="true") Clients
+//-     span.caret
+//-   ul.dropdown-menu(role="menu", aria-labelledby="clients-menu")
+//-       li(role="presentation")
+//-         a(href="clients.html", role="menuitem" tabindex="-1") Clients List
+//-         a(href="testimonials.html", role="menuitem" tabindex="-1") Testimonials
+//-         a(href="stories.html", role="menuitem" tabindex="-1") Stories
+
+//- li(class=page ==='gallery' ? 'active': ''): a(href="gallery.html") Gallery
+//- li(class=page ==='events' ? 'active': ''): a(href="events.html") Events
+
+//- li.dropdown(class=page ==='articles' || page==='newsletter'? 'active': '')
+//-   a.dropdown-toggle(href="#", id="for-you-menu", data-toggle="dropdown", aria-expanded="true") Clients
+//-     span.caret
+//-   ul.dropdown-menu(role="menu", aria-labelledby="for-you-menu")
+//-       li(role="presentation")
+//-         a(href="articles-1.html", role="menuitem" tabindex="-1") Articles
+//-         a(href="articles-2.html", role="menuitem" tabindex="-1") Newsletter
+
+li(class=page ==='about' ? 'active': ''): a(href="about.html") About
+li(class= page ==='contact' ? 'active': ''): a(href="contact.html") Contact

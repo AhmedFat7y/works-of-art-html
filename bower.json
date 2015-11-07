@@ -1,8 +1,29 @@
 {
-  "name": "simple-html",
+  "name": "hci-html",
   "private": true,
   "dependencies": {
     "jquery": "~1.11.1",
+    "bootstrap": "~3.3.5",
     "modernizr": "~2.8.2"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
+    },
+    "raty": {
+      "main": [
+        "lib/jquery.raty.css",
+        "lib/jquery.raty.js",
+        "lib/images/star-off.js",
+        "lib/images/star-on.js",
+        "lib/images/star-half.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "raty": "~2.7.0"
   }
 }
