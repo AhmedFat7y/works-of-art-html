@@ -7,7 +7,7 @@ doctype html
 <!--<![endif]-->
 head
   meta(charset='utf-8')
-  title journey html
+  title #{pagetitle}
   meta(name='description', content='')
   meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
   link(rel='shortcut icon', href='/favicon.ico')
@@ -15,11 +15,16 @@ head
   // build:css({app,.tmp}) styles/vendor.css
   // bower:css
   link(rel='stylesheet', href='../bower_components/bootstrap/dist/css/bootstrap.css')
+  link(rel='stylesheet', href='../bower_components/raty/lib/jquery.raty.css')
+  link(rel='stylesheet', href='../bower_components/slick-carousel/slick/slick.css')
+  link(rel='stylesheet', href='../bower_components/slick-carousel/slick/slick-theme.css')
   // endbower
   // endbuild
   // build:css(.tmp) styles/main.css
   link(rel='stylesheet', href='styles/main.css')
   // endbuild
+  <link rel="stylesheet" href="//cdn.quilljs.com/0.20.0/quill.snow.css" />
+
   // build:js scripts/vendor/modernizr.js
   script(src='bower_components/modernizr/modernizr.js')
   // endbuild

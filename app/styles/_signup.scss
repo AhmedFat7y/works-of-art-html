@@ -1,5 +1,21 @@
-.signup-form, login-form {
+.padded-form {
   padding: 30px 20px;
   border-radius: 5px;
   margin-bottom: 40px;
+}
+
+.quill-wysiwyg {
+  #toolbar {
+    border: 1px solid #e5e5e5;
+    // width: 50%;
+    margin: 5px auto 0;
+    box-shadow: 2px 1px 5px rgba(0,0,0,0.2);
+  }
+  #editor {
+    // width: 50%;
+    margin: 0 auto 20px;
+    box-shadow: 2px 1px 5px rgba(0,0,0,0.2);
+    border: 1px solid #e5e5e5;
+    height: 300px;
+  }
 }

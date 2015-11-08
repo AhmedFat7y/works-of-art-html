@@ -1,0 +1,36 @@
+.fluid-container.main-container
+  .container
+    .row
+      .col-sm-12.page-title
+        h1 #{pagetitle}
+      .col-sm-12
+        ol.breadcrumb
+          li
+            a(href='#') Home
+          li.active Create Novel
+    .row
+      .col-sm-8.col-sm-offset-2
+        form.main-content.new-novel-form.padded-form 
+          legend Create Novel
+          .form-group
+            label(for='novel-cover') Novel Cover Image
+            input#image.form-control(type='file', placeholder='Novel Image', required='required')
+          .form-group
+            label(for='title') Title
+            input#title.form-control(type='text', placeholder='Novel Title', required='required')
+          .form-group
+            label(for='description') Description
+            textarea#description.form-control(placeholder='Brief description about the novel', required='required', rows="10")
+          //- .form-group
+          //-   label(for='description') Description
+          //-   include _quill-wysiwyg
+            //- p.help-block Password length should be greater than 8 characters long.
+          //- .checkbox
+          //-   label
+          //-     input(type='checkbox')
+          //-     |  Publish
+          .row
+            .col-sm-3.col-sm-offset-9
+              button.btn.btn-primary(type='submit') Create Novel
+
+
