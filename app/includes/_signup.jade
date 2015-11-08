@@ -1,0 +1,36 @@
+.fluid-container.main-container
+  .container
+    .row
+      .col-sm-12.page-title
+        h1 Join Us
+      .col-sm-12
+        ol.breadcrumb
+          li
+            a(href='#') Home
+          li.active Sign Up
+    .row
+      .col-sm-6.col-sm-offset-3
+        form.main-content.signup-form
+          legend Sign up
+          .form-group
+            label(for='name') Display Name
+            input#name.form-control(type='text', placeholder='Display Name', required='required')
+            p.help-block The name that other memebers will see.
+          .form-group
+            label(for='email') Email address
+            input#email.form-control(type='email', placeholder='Email', required='required')
+          .form-group
+            label(for='password') Password
+            input#password.form-control(type='password', placeholder='Password', required='required')
+            p.help-block Password length should be greater than 8 characters long.
+          .form-group
+            label(for='birth-date') Birth Date
+            input#birth-date.form-control(type='date', required='required')
+            p.help-block Format dd/mm/yyyy
+          .checkbox
+            label
+              input(type='checkbox')
+              |  I agree to sell my soul to access this service.
+          button.btn.btn-primary(type='submit') Create Account
+
+

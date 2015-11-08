@@ -30,12 +30,82 @@ header {
     }
   }
 }
+
+.cards-list {
+  margin: 40px 0 60px;
+  .list-filter {
+    font-size: 1.5rem;
+    .breadcrumb {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.main-container {
+  background-color: #EFEBE6;
+}
+
+.main-content {
+  background-color: white;
+}
+
 .card {
+  border-radius: 5px;
+  background-color: white;
   + .card {
-    margin-top: 20px;
+    margin-top: 30px;
+  }
+  p {
+    margin-bottom: 0;
   }
   .media-object {
-    width: 130px;
-    height: 130px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 150px;
+    height: 150px;
+  }
+  .media-body {
+    padding: 17px 0 0 0;
+  }
+  .media-heading {
+    font-size: 20px;
+  }
+
+  .description {
+    margin-top: 15px;
+  }
+
+  .extra-info {
+    margin-top: 15px;
+    vertical-align: bottom;
+  }
+
+  .label {
+    float: right;
+    width: 75px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    padding: 7px;
+    text-align: center;
+    &.danger {
+      background-color: #CE4C4A;
+    }
+    &.safe {
+      background-color: #88BF5D;
+    }
+  }
+}
+
+.tags {
+  i {
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    margin: 0 10px 0 0;
+    font-size: 1rem;
+    background: #E9EDEB;
+    color: #304661;
   }
 }

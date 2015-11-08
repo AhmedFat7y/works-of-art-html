@@ -10,10 +10,10 @@ header(class=page === 'home' ? 'home' : '')
               span.icon-bar
               span.icon-bar
             a(href="index.html").navbar-brand: img(src="images/logo.png", alt="Journey", title="Journey")
-          .collapse.navbar-collapse.navbar-ex1-collapse
+          .collapse.navbar-collapse.navbar-ex1-collapse.nav-section
             ul.nav.navbar-nav
               include _navlinks
-            .col-sm-3.col-md-3.search-form
+            .col-sm-3.col-md-3.navbar-search
               form(role='search')
                 .input-group
                   input#srch-term.form-control(type='text', placeholder='Author / Title / Genre', name='srch-term')
@@ -21,7 +21,7 @@ header(class=page === 'home' ? 'home' : '')
                     button.btn.btn-default(type='submit')
                       i.glyphicon.glyphicon-search
             -if (loggedIn && loggedIn === true) {
-            .col-sm-1.col-md-1.pull-right
+            .col-sm-1.col-md-1.pull-right.navbar-user
               .dropdown
                 a.profile.dropdown-toggle(href="#", id="profile-menu", data-toggle="dropdown", aria-expanded="true")
                   img(src="images/default.png")
@@ -30,7 +30,11 @@ header(class=page === 'home' ? 'home' : '')
                   li(role="presentation")
                     a(href="profile.html", role="menuitem" tabindex="-1") My Account
                     a(href="logout.html", role="menuitem" tabindex="-1") Logout
-            -}
+            -} else {
+              .col-sm-2.pull-right.nav-section.navbar-login
+                a.btn.btn-primary(href="login.html") Log In 
+                a.btn.btn-primary(href="signup.html") Sign Up
+            - }
         - if(page === 'home-journey') {
         .slide
           h1 Great organizations need great consultatns
@@ -38,6 +42,6 @@ header(class=page === 'home' ? 'home' : '')
           p
             a(href="#").btn.btn-lg.btn-primary Discover our product
         - } else {
-          h1.page-title #{pagetitle}
+          //- h1.page-title #{pagetitle}
         - }
-  a.scroll-down(href="#"): svg.icon <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-arrow-down"></use>
+  //- a.scroll-down(href="#"): svg.icon <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-arrow-down"></use>
