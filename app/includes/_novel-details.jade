@@ -28,29 +28,12 @@
               | 8/11/2015
             p.likes 56 like
     .row
-      .col-sm-6.col-sm-offset-3
-        .slider.slider-for
-          .slide
-            h3 Hello World-11
-          .slide
-            h3 Hello World-21
-          .slide
-            h3 Hello World-31
-          .slide
-            h3 Hello World-41
-          .slide
-            h3 Hello World-51
-        .slider.slider-nav
-          .slide
-            h3 Hello World-1
-          .slide
-            h3 Hello World-2
-          .slide
-            h3 Hello World-3
-          .slide
-            h3 Hello World-4
-          .slide
-            h3 Hello World-5
-
-
-
+      .col-sm-8.col-sm-offset-2
+        - for(var i = 1; i <= 3; i++) {
+        .slider(class="slider-#{i}")
+        //-  - for(var j = 1; j <= 10; j++) {
+        //-  .slide
+        //-    .slide-content
+        //-      h3 Hello World-#{Array(i+1).join(j+'')}
+        //-  - }
+        - }

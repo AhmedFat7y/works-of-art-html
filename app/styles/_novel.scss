@@ -9,6 +9,20 @@
 }
 
 .slide {
-  background-color: white;
+  padding: 0 10px;
+  opacity: 0.8;
+  background-color: transparent;
   text-align: center;
+  .slide-content {
+    background-color: white;
+  }
+  &.slick-center {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    color: #e67e22;
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
