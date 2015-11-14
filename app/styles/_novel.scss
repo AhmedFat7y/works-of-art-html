@@ -24,5 +24,9 @@
     color: #e67e22;
     opacity: 1;
     transform: scale(1.1);
+    pointer-events: auto;
+    .slide-content {
+      cursor: pointer;
+    }
   }
 }

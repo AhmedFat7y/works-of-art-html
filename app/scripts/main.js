@@ -17,28 +17,26 @@ $(document).ready(function(){
   }//endif
   
   $('.slider-1, .slider-2, .slider-3').slick({
-    slidesToShow: 1,
+    slidesToShow: 3,
     // slidesToScroll: 1,
     centerPadding: '10px',
     centerMode: true,
     adaptiveHeight: true,
+    draggable: false,
     // asNavFor: '.slider-3',
     // focusOnSelect: true
   });
   
   $(chaptersTree).each(function(index, treeLevel) {
-    var slider = $('.slider-' + (index+1));
+    var slider = $('.slider-' + (index + 1));
+    slider.prop('data-chapter', index + 1);
     $(treeLevel).each(function(index2, chapter){
       slider.slick('slickAdd', chapter.html);
     });
   });
   
-  $('.slider-1, .slider-2, .slider-3').slick('slickGoTo', 0);
+  // $('.slider-1, .slider-2, .slider-3').slick('slickGoTo', 0);
 
-  $('.slider-2').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    var id = slick.$slides[nextSlide].id;
-    $('.slider-3').slick('slickFilter', '[data-parent=' + id + ']');
-  });
   // $('').slick({
   //   slidesToShow: 3,
   //   slidesToScroll: 1,
