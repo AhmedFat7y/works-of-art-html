@@ -1,0 +1,38 @@
+.profilepicture{
+  width:25%;
+  float:left;
+  padding-top: 50px;
+  clear:both;
+}
+.fullname{
+  margin: 0 auto;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.birthdate, .email, .website{
+  text-align: center;
+}
+
+.myreadings{
+  padding: 200px 0 10px;
+  clear:both;
+}
+.reads{
+  list-style-type: none;
+  margin: 0 auto;
+}
+.read{
+  max-width:25%;
+  float:left;
+  display:block
+}
+
+.reads:after{
+  content:'';
+  clear: both;
+}
+.read:after{
+  content:'';
+  clear: both;
+}
