@@ -1,0 +1,77 @@
+.fluid-container.main-container
+  .container
+    .row
+      .col-sm-12.page-title
+        h1 #{pagetitle}
+      .col-sm-12
+        ol.breadcrumb
+          li
+            a(href='#') Home
+          li
+            a(href='#') Library
+          li.active Data
+    .row
+      .col-sm-4.col-sm-offset-8.list-filter.text-center
+        ol.breadcrumb
+          li
+            a(href='#') Most Recent
+          li.active
+            | Most Popular
+          li
+            a(href='#') Random
+    .row
+      .col-sm-3.search-filters.main-content.cards-list
+        form.padded-form
+          legend Search
+          .form-group
+            input#name.form-control(type='text', placeholder='Type here', required='required')
+            .checkbox
+              label
+                input#author(type='checkbox', name='author')
+                |     Author
+            .checkbox
+              label
+                input#title(type='checkbox', name='title')
+                |     Title
+            .checkbox
+              label
+                input#description(type='checkbox', name='description')
+                |     Description
+          button.btn.btn-default(type='submit') Search
+        form.padded-form
+          legend Filters
+          .form-group
+            - var genres = ['horror', 'action', 'drama', 'adventures', 'romance'];
+            - for (var i = 0; i< genres.length; i++) {
+              .checkbox
+                label
+                  input(type='checkbox', name='genres-filter', id="#{i}", value="#{i}")
+                  |     #{genres[i]}
+            -}
+          button.btn.btn-default(type='submit') Filter
+      .col-sm-9
+        .row.cards-list
+          .col-sm-12
+            - for(var i = 0; i < 10; i++) {
+              include _novel-card-view
+            -}
+          .col-sm-12.text-center
+            nav
+              ul.pagination
+                li.disabled
+                  a(href='#', aria-label='Previous')
+                    span(aria-hidden='true') «
+                li
+                  a(href='#') 1
+                li
+                  a(href='#') 2
+                li
+                  a(href='#') 3
+                li
+                  a(href='#') 4
+                li
+                  a(href='#') 5
+                li
+                  a(href='#', aria-label='Next')
+                    span(aria-hidden='true') »
+

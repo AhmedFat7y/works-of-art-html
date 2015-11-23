@@ -406,8 +406,8 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           dot: true,
-          cwd: 'bower_components/simple-line-icons-webfont',
-          src: ['fonts/*.*'],
+          cwd: 'bower_components/raty/lib',
+          src: ['images/*.*', 'fonts/*.*'],
           dest: '<%= config.dist %>'
         }]
       },

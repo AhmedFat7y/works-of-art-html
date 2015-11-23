@@ -1,0 +1,39 @@
+.fluid-container.main-container
+  .container
+    .row
+      .col-sm-12.page-title
+        h1 #{pagetitle}
+      .col-sm-12
+        ol.breadcrumb
+          li
+            a(href='#') Home
+          li
+            a(href='#') Novels
+          li.active Novel Title
+    .row.about-novel
+      .col-sm-3.novel-img
+        img.responsive-img(src='images/default.png')
+      .col-sm-9
+        .novel-heading
+          p.label.danger 18+
+          h1 Novel Title
+        .novel-description
+          p Lorem ipsum Ea veniam minim mollit dolor labore eiusmod non reprehenderit fugiat ea laborum incididunt Duis in et officia et in eu velit cillum veniam elit Ut ut nulla cillum dolore Ut deserunt consequat reprehenderit veniam dolore in nulla laboris dolore magna.
+          .extra-info
+            p
+              | Authored by: 
+              a.author(href='#') Author Name
+            p.date
+              | Created at:
+              | 8/11/2015
+            p.likes 56 like
+    .row
+      .col-sm-8.col-sm-offset-2
+        - for(var i = 1; i <= 3; i++) {
+        .slider(class="slider-#{i}")
+        //-  - for(var j = 1; j <= 10; j++) {
+        //-  .slide
+        //-    .slide-content
+        //-      h3 Hello World-#{Array(i+1).join(j+'')}
+        //-  - }
+        - }

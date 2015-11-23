@@ -1,0 +1,33 @@
+.fluid-container.main-container
+  .container
+    .row
+      .col-sm-12.page-title
+        h1 #{pagetitle}
+      .col-sm-12
+        ol.breadcrumb
+          li
+            a(href='#') Home
+          li.active Create Chapter
+    .row
+      .col-sm-8.col-sm-offset-2
+        form.main-content.new-novel-form.padded-form 
+          legend Create Chapter
+          .form-group
+            label(for='novel-cover') Chapter Cover Image
+            input#image.form-control(type='file', placeholder='Novel Image', required='required')
+            p.help-block Optional
+          .form-group
+            label(for='title') Title
+            input#title.form-control(type='text', placeholder='Novel Title', required='required')
+          .form-group
+            label(for='chapter') Chapter Content
+            include _quill-wysiwyg
+          //- .checkbox
+          //-   label
+          //-     input(type='checkbox')
+          //-     |  Publish
+          .row
+            .col-sm-3.col-sm-offset-9
+              button.btn.btn-primary(type='submit') Create Novel
+
+

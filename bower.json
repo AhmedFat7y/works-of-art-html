@@ -4,7 +4,10 @@
   "dependencies": {
     "jquery": "~1.11.1",
     "bootstrap": "~3.3.5",
-    "modernizr": "~2.8.2"
+    "modernizr": "~2.8.2",
+    "quill": "~0.20.0",
+    "raty": "~2.7.0",
+    "slick-carousel": "~1.5.8"
   },
   "overrides": {
     "bootstrap": {
@@ -16,10 +19,7 @@
     "raty": {
       "main": [
         "lib/jquery.raty.css",
-        "lib/jquery.raty.js",
-        "lib/images/star-off.js",
-        "lib/images/star-on.js",
-        "lib/images/star-half.js"
+        "lib/jquery.raty.js"
       ]
     }
   },

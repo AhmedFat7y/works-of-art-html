@@ -2,7 +2,7 @@
   .container
     .row
       .col-sm-12.page-title
-        h1 Novels
+        h1 #{pagetitle}
       .col-sm-12
         ol.breadcrumb
           li
@@ -10,15 +10,16 @@
           li
             a(href='#') Library
           li.active Data
-    .row.cards-list
+    .row
       .col-sm-4.col-sm-offset-8.list-filter.text-center
         ol.breadcrumb
           li
             a(href='#') Most Recent
-          li
-            a(href='#') Random
           li.active
             | Most Popular
+          li
+            a(href='#') Random
+    .row.cards-list
       .col-sm-12
         - for(var i = 0; i < 10; i++) {
           include _novel-card-view
