@@ -36,7 +36,7 @@ with open('data.csv', 'r') as csvfile:
 jsonstr = '['
 
 for chapter in list_copy(chapters):
-  jsonstr += '{"ch": %i, "id": %i, "title": "%s", "pid": %i}' % (chapter.chapter_number, chapter.id, chapter.title, chapter.parent_id)
+  jsonstr += '{"chapter_no": %i, "id": %i, "title": "%s", "parent_id": %i}' % (chapter.chapter_number, chapter.id, chapter.title, chapter.parent_id)
   if not chapter == chapters[-1]:
     jsonstr += ","
 

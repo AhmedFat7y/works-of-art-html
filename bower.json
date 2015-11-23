@@ -6,7 +6,6 @@
     "bootstrap": "~3.3.5",
     "modernizr": "~2.8.2",
     "quill": "~0.20.0",
-    "raty": "~2.7.0",
     "slick-carousel": "~1.5.8"
   },
   "overrides": {
@@ -14,12 +13,6 @@
       "main": [
         "dist/css/bootstrap.css",
         "dist/js/bootstrap.js"
-      ]
-    },
-    "raty": {
-      "main": [
-        "lib/jquery.raty.css",
-        "lib/jquery.raty.js"
       ]
     }
   },
