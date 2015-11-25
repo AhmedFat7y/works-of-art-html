@@ -1,4 +1,4 @@
-/* global Maplace chaptersTree */
+/* global Maplace chaptersTree quillEditor */
 'use strict';
 $(document).ready(function(){
   // $.get('images/svg-defs.svg', function(data) {
@@ -7,7 +7,7 @@ $(document).ready(function(){
   // });
 
   if ($('#editor').length > 0) {
-    var editor = new Quill('#editor', {
+    quillEditor = new Quill('#editor', {
       modules: {
         'toolbar': { container: '#toolbar' },
         'link-tooltip': true
@@ -16,7 +16,7 @@ $(document).ready(function(){
     });
   }//endif
   
-  $('.slider-1, .slider-2, .slider-3').slick({
+  $('.slider').slick({
     slidesToShow: 3,
     // slidesToScroll: 1,
     centerPadding: '10px',
