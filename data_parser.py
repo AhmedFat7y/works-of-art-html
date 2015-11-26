@@ -37,22 +37,8 @@ jsonstr = '['
 
 for chapter in list_copy(chapters):
   jsonstr += '{"chapter_no": %i, "id": %i, "title": "%s", "parent_id": %i}' % (chapter.chapter_number, chapter.id, chapter.title, chapter.parent_id)
-  if not chapter == chapters[-1]:
-    jsonstr += ","
-
-
-jsonstr += ']'
-
-
-# chapters_tree = []
-
-# # chapters = sorted(chapters, key=lambda chapter: chapter.chapter_number)
-
-# max_chapter = reduce(max_chapter, chapters)
-
-# for i in xrange(max_chapter.chapter_number):
-#   chapters_tree.append(filter(lambda chapter: chapter.chapter_number == i + 1, chapters))
-# print chapters_tree
+  jsonstr += ","
+jsonstr[-1] = ']'
 
 with open('data.json', 'w') as jsonfile:
   jsonfile.write(jsonstr)
