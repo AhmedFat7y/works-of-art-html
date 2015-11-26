@@ -1,3 +1,4 @@
+-var levels = 6;
 .fluid-container.main-container
   .container
     .row
@@ -27,13 +28,30 @@
               | Created at:
               | 8/11/2015
             p.likes 56 like
-    .row
-      .col-sm-8.col-sm-offset-2
-        - for(var i = 1; i <= 3; i++) {
-        .slider(class="slider-#{i}")
-        //-  - for(var j = 1; j <= 10; j++) {
-        //-  .slide
-        //-    .slide-content
-        //-      h3 Hello World-#{Array(i+1).join(j+'')}
-        //-  - }
-        - }
+    - if(tracks) {
+      .row.tracks
+        .col-sm-12
+
+          h4 most popular tracks
+    - } else {
+      - for(var i = 1; i <= levels; i++) {
+      .row
+        .col-sm-2
+          h5.v-center Chapter #{i} Versions
+        .col-sm-10
+          .slider(class="slider-#{i}", data-chapter-number="#{i}")
+            - for(var j = 1; j <= 10; j++) {
+            .slide(data-parent-id="0", data-id="0")
+              .slide-content
+                h5 Hello World-#{j}
+                .extra-info
+                  p
+                    | Author: 
+                    a.author(href='#') Author Name
+                  p.date
+                    | Created at:
+                    | 8/11/2015
+                  p.likes 56 like
+            - }
+      - }
+    - }

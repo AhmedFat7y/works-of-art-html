@@ -3,27 +3,30 @@
 }
 
 .extra-info {
-  .author {
-    margin-right: 20px;
+  .about-novel & {
+    .author {
+      margin-right: 20px;
+    }
   }
 }
 
 .slide {
-  padding: 0 10px;
+  padding: 0 20px;
   opacity: 0.8;
   background-color: transparent;
   text-align: center;
   .slide-content {
     background-color: white;
+    padding: 10px 0;
   }
   &.slick-center {
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     color: #e67e22;
     opacity: 1;
-    transform: scale(1.1);
     pointer-events: auto;
     .slide-content {
       cursor: pointer;

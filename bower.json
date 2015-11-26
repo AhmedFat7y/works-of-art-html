@@ -15,8 +15,5 @@
         "dist/js/bootstrap.js"
       ]
     }
-  },
-  "devDependencies": {
-    "raty": "~2.7.0"
   }
 }

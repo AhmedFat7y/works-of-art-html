@@ -1,4 +1,4 @@
-/* global Maplace chaptersTree */
+/* global Maplace chaptersTree quillEditor */
 'use strict';
 $(document).ready(function(){
   // $.get('images/svg-defs.svg', function(data) {
@@ -7,7 +7,7 @@ $(document).ready(function(){
   // });
 
   if ($('#editor').length > 0) {
-    var editor = new Quill('#editor', {
+    quillEditor = new Quill('#editor', {
       modules: {
         'toolbar': { container: '#toolbar' },
         'link-tooltip': true
@@ -16,25 +16,25 @@ $(document).ready(function(){
     });
   }//endif
   
-  $('.slider-1, .slider-2, .slider-3').slick({
-    slidesToShow: 3,
-    // slidesToScroll: 1,
-    centerPadding: '10px',
-    centerMode: true,
-    adaptiveHeight: true,
-    draggable: false,
-    // asNavFor: '.slider-3',
-    // focusOnSelect: true
-  });
-  
-  $(chaptersTree).each(function(index, treeLevel) {
-    var slider = $('.slider-' + (index + 1));
-    slider.prop('data-chapter', index + 1);
-    $(treeLevel).each(function(index2, chapter){
-      slider.slick('slickAdd', chapter.html);
+  var slidersContainer = $('.tracks').parent();
+  $(tracks).each(function(index, track) {
+    // if(index > 5) {return;}
+    var slider = $(createSliderHTML(index + 1, 20)).appendTo(slidersContainer).find('.slider');
+    $(track).each(function(index2, chapter){
+      slider.append(chapterToSlideHTML(chapter));
+    });
+    slider.slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerPadding: '10px',
+      centerMode: true,
+      adaptiveHeight: true,
+      draggable: false,
+      infinite: true
+      // asNavFor: '.slider-3',
+      // focusOnSelect: true
     });
   });
-  
   // $('.slider-1, .slider-2, .slider-3').slick('slickGoTo', 0);
 
   // $('').slick({
@@ -54,5 +54,4 @@ $(document).ready(function(){
   //   centerMode: true,
   //   focusOnSelect: true
   // });
-
 });
