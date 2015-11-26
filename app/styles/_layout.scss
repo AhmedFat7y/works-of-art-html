@@ -138,6 +138,18 @@ footer {
     }
   }
 }
+.v-center {
+  position: relative;
+  top: 20px;
+  transform: translateY(-50%);
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
 
 @media (min-width: 768px) {
   .col-sm-4 {

@@ -2,7 +2,7 @@
 'use strict';
 
 var maxChapterNumber;
-var chaptersTree;
+var tracks;
 var quillEditor;
 var jsonstr = jsonstr || '[{"chapter_no": 1, "id": 1, "title": "hello-1", "parent_id": 0},{"chapter_no": 2, "id": 2, "title": "hello-2", "parent_id": 1},{"chapter_no": 2, "id": 3, "title": "hello-3", "parent_id": 1},{"chapter_no": 2, "id": 4, "title": "hello-4", "parent_id": 1},{"chapter_no": 2, "id": 5, "title": "hello-5", "parent_id": 1},{"chapter_no": 3, "id": 6, "title": "hello-6", "parent_id": 2},{"chapter_no": 3, "id": 7, "title": "hello-7", "parent_id": 2},{"chapter_no": 3, "id": 8, "title": "hello-8", "parent_id": 2},{"chapter_no": 3, "id": 9, "title": "hello-9", "parent_id": 2},{"chapter_no": 3, "id": 10, "title": "hello-10", "parent_id": 3},{"chapter_no": 3, "id": 11, "title": "hello-11", "parent_id": 3},{"chapter_no": 3, "id": 12, "title": "hello-12", "parent_id": 3},{"chapter_no": 3, "id": 13, "title": "hello-13", "parent_id": 3},{"chapter_no": 3, "id": 14, "title": "hello-14", "parent_id": 4},{"chapter_no": 3, "id": 15, "title": "hello-15", "parent_id": 4},{"chapter_no": 3, "id": 16, "title": "hello-16", "parent_id": 4},{"chapter_no": 3, "id": 17, "title": "hello-17", "parent_id": 4},{"chapter_no": 3, "id": 18, "title": "hello-18", "parent_id": 5},{"chapter_no": 3, "id": 19, "title": "hello-19", "parent_id": 5},{"chapter_no": 3, "id": 20, "title": "hello-20", "parent_id": 5},{"chapter_no": 3, "id": 21, "title": "hello-21", "parent_id": 5},{"chapter_no": 4, "id": 22, "title": "hello-22", "parent_id": 6},{"chapter_no": 4, "id": 23, "title": "hello-23", "parent_id": 6},{"chapter_no": 4, "id": 24, "title": "hello-24", "parent_id": 6},{"chapter_no": 4, "id": 25, "title": "hello-25", "parent_id": 6},{"chapter_no": 4, "id": 26, "title": "hello-26", "parent_id": 7},{"chapter_no": 4, "id": 27, "title": "hello-27", "parent_id": 7},{"chapter_no": 4, "id": 28, "title": "hello-28", "parent_id": 7},{"chapter_no": 4, "id": 29, "title": "hello-29", "parent_id": 7},{"chapter_no": 4, "id": 30, "title": "hello-30", "parent_id": 8},{"chapter_no": 4, "id": 31, "title": "hello-31", "parent_id": 8},{"chapter_no": 4, "id": 32, "title": "hello-32", "parent_id": 8},{"chapter_no": 4, "id": 33, "title": "hello-33", "parent_id": 8},{"chapter_no": 4, "id": 34, "title": "hello-34", "parent_id": 9},{"chapter_no": 4, "id": 35, "title": "hello-35", "parent_id": 9},{"chapter_no": 4, "id": 36, "title": "hello-36", "parent_id": 10},{"chapter_no": 4, "id": 37, "title": "hello-37", "parent_id": 10},{"chapter_no": 4, "id": 38, "title": "hello-38", "parent_id": 11},{"chapter_no": 4, "id": 39, "title": "hello-39", "parent_id": 11},{"chapter_no": 4, "id": 40, "title": "hello-40", "parent_id": 11},{"chapter_no": 4, "id": 41, "title": "hello-41", "parent_id": 12},{"chapter_no": 4, "id": 42, "title": "hello-42", "parent_id": 12},{"chapter_no": 4, "id": 43, "title": "hello-43", "parent_id": 12},{"chapter_no": 4, "id": 44, "title": "hello-44", "parent_id": 12},{"chapter_no": 4, "id": 45, "title": "hello-45", "parent_id": 12},{"chapter_no": 4, "id": 46, "title": "hello-46", "parent_id": 13},{"chapter_no": 4, "id": 47, "title": "hello-47", "parent_id": 13},{"chapter_no": 4, "id": 48, "title": "hello-48", "parent_id": 14},{"chapter_no": 4, "id": 49, "title": "hello-49", "parent_id": 14},{"chapter_no": 4, "id": 50, "title": "hello-50", "parent_id": 15},{"chapter_no": 4, "id": 51, "title": "hello-51", "parent_id": 15},{"chapter_no": 4, "id": 52, "title": "hello-52", "parent_id": 15}]';
 
@@ -22,8 +22,54 @@ function getMaxChapter(data) {
   }, {ch:0});
 }
 
+function hasChildren(nodes, node) {
+  for (var i=0; i < nodes.length; i++) {
+    if (node.id === nodes[i].parent_id) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function getLeaves(nodes) {
+  var leaves = [];
+  for(var i=0; i < nodes.length; i++) {
+    if(!hasChildren(nodes, nodes[i])) {
+      leaves.push(nodes[i]);
+    }
+  }
+  return leaves;
+}
+
+function getParent(nodes, node) {
+  for (var i = 0; i < nodes.length; i++) {
+    if (nodes[i].id === node.parent_id) {
+      return nodes[i];
+    }
+  }
+  return undefined;
+}
+
+function buildTracks() {
+  var chapters = getData();
+  var tracks = [];
+  var leaves = getLeaves(chapters);
+  for(var i=0; i < leaves.length; i++) {
+    tracks.push(_buildTrack(chapters, leaves[i]));
+  }
+  return tracks;
+}
+function _buildTrack(nodes, leaf) {
+  var path = [];
+  var parent = leaf;
+  do {
+    path.push(parent);
+    parent = getParent(nodes, parent)
+  } while(parent);
+  return path.reverse();
+}
+
 function _buildTreeLevels(data) {
-  
   var max = getMaxChapter(data).chapter_no;
   maxChapterNumber = max;
   var resultTree = new Array(max);
@@ -33,14 +79,35 @@ function _buildTreeLevels(data) {
   return resultTree;
 }
 
-function chapterToSlide(chapter){
-  return '<div class="slide" id="' + chapter.id +'" data-parent="' + chapter.parent_id + '">'
-        +'<div class="slide-content">'
-        +'<h4>' + chapter.title + '</h4>'
-        +'</div>'
-        +'</div>';
+function createSliderHTML(trackNumber, numberOfLikes) {
+  return '<div class="row">'
+    +  '<div class="col-sm-2">'
+    +    '<h5 class="v-center">Track: '+ trackNumber + '</h5>'
+    +    '<p>' + numberOfLikes + ' Like(s)</p>'
+    +  '</div>'
+    +  '<div class="col-sm-10">'
+    +    '<div data-track-number="' + trackNumber + '" class="slider slider-'+ trackNumber +'">'
+    +    '</div>'
+    +  '</div>'
+    +'</div>';
 }
 
+function chapterToSlideHTML(chapter) {
+  var x = '<div data-parent-id="' + chapter.parent_id + '" data-id="' + chapter.id + '" class="slide">'
+    +  '<div class="slide-content">'
+    +    '<h5>' + chapter.title + '</h5>'
+    +    '<div class="extra-info">'
+    +      '<p>Author: <a href="#" class="author">' + (chapter.author || 'N/A') + '</a></p>'
+    // +       '<p class="date">'
+    // +         'Created at:'
+    // +         '8/11/2015'
+    // +       '</p>'
+    +      '<p class="likes">' + (chapter.likes||0) + ' like</p>'
+    +    '</div>'
+    +  '</div>'
+    + '</div>';
+  return x;
+}
 
 function buildChapterSlides() {
   var data = getData();
@@ -53,9 +120,6 @@ function buildChapterSlides() {
   });
 
 }
-
-chaptersTree = buildChapterSlides();
-
 
 function getChapterSiblings(chapters, chapter) {
   return chapters.filter(function(chapter2) {
@@ -79,3 +143,5 @@ function replaceSlides(slider, chapters) {
     slider.slick('slickAdd', chapter.html);
   });
 }
+
+tracks = buildTracks();
