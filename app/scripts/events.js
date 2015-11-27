@@ -88,3 +88,8 @@ $(document).on('init', '.slider', function(e, sl){
         $('.slick-center').removeClass('slick-center');
     }
 });
+
+$(document).on('submit', '#new_chapter', function(e) {
+  $(this).find('textarea').val(quillEditor.getHTML());
+  return true;
+});

@@ -15,15 +15,28 @@ $(document).ready(function(){
       theme: 'snow',
     });
   }//endif
-  
   var slidersContainer = $('.tracks').parent();
-  $(tracks).each(function(index, track) {
-    // if(index > 5) {return;}
-    var slider = $(createSliderHTML(index + 1, 20)).appendTo(slidersContainer).find('.slider');
-    $(track).each(function(index2, chapter){
-      slider.append(chapterToSlideHTML(chapter));
+  if(slidersContainer.length > 0) {
+    $(tracks).each(function(index, track) {
+      // if(index > 5) {return;}
+      var slider = $(createSliderHTML(index + 1, 20)).appendTo(slidersContainer).find('.slider');
+      $(track).each(function(index2, chapter){
+        slider.append(chapterToSlideHTML(chapter));
+      });
+      slider.slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerPadding: '10px',
+        centerMode: true,
+        adaptiveHeight: true,
+        draggable: false,
+        infinite: true
+        // asNavFor: '.slider-3',
+        // focusOnSelect: true
+      });
     });
-    slider.slick({
+  } else {
+    $('.slider').slick({
       slidesToShow: 3,
       slidesToScroll: 1,
       centerPadding: '10px',
@@ -34,7 +47,7 @@ $(document).ready(function(){
       // asNavFor: '.slider-3',
       // focusOnSelect: true
     });
-  });
+  }
   // $('.slider-1, .slider-2, .slider-3').slick('slickGoTo', 0);
 
   // $('').slick({
