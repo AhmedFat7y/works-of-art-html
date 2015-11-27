@@ -28,9 +28,9 @@ class DataCreator:
     self.chapters = []
     self.novels = []
     self.genres = []
-    self.titles_reserved = []
-    self.males_names_reserved = []
-    self.females_names_reserved = []
+    self.titles_reserved = ['Default Title']
+    self.males_names_reserved = ['Default Name']
+    self.females_names_reserved = ['Default Name']
 
   def load_data(self):
     logger.info('Reading names and titles from file . . .')
@@ -43,18 +43,24 @@ class DataCreator:
   def get_title(self):
     """return title"""
     title = 'Default Title'
-    # for (i in range)
-    title = random.choice(self.titles)
+    while title in self.titles_reserved:
+      title = random.choice(self.titles)
     self.titles_reserved.append(title)
     return title
 
   def get_male_name(self):
     """return (first name, last name)"""
-    return (random.choice(self.males_names), random.choice(self.males_names))
+    name = 'Default Name'
+    while name in self.males_names_reserved:
+      name = (random.choice(self.males_names), random.choice(self.males_names))
+    return name
 
   def get_female_name(self):
     """return (first name, last name)"""
-    return (random.choice(self.females_names), random.choice(self.males_names))
+    name = 'Default Name'
+    while name in self.females_names_reserved:
+      name = (random.choice(self.females_names), random.choice(self.males_names))
+    return name
 
   def format_user_data(self, index, first_name, last_name):
     return """
