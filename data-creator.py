@@ -17,7 +17,21 @@ MIN_NUMBER_OF_CHAPTERS_PER_LEVEL = 4
 MAX_NUMBER_OF_CHAPTERS_PER_LEVEL = 7
 MIN_LIKES_PER_CHAPTER = 50
 MAX_LIKES_PER_CHAPTER = 130
-regex = re.compile(r'[,\t\n/]')
+regex = re.compile(r"[ ,\t\n/'-]")
+OUTPUT_DIR = 'fixtures/'
+DEFAULT_CREATION_DATE = '---\n' + """DEFAULTS: &DEFAULTS
+  created_at: <%= 3.weeks.ago.to_s(:db) %>"""
+
+
+def format_list(l):
+  return reduce(lambda x, y: x + ',' + y, l)
+
+
+def get_relative_path(file_name):
+  return os.path.join(get_script_path(), file_name)
+
+if not os.path.exists(get_relative_path(OUTPUT_DIR)):
+  os.makedirs(get_relative_path(OUTPUT_DIR))
 
 
 class DataCreator:
@@ -30,7 +44,7 @@ class DataCreator:
     self.long_titles = filter(lambda x: ' ' in x, self.titles)
     self.males_names = data['males_names']
     self.females_names = data['females_names']
-    self.chapters_reserved = []
+    self.chapters_reserved = ['Default Chapter']
     self.users = []
     self.chapters = []
     self.novels = []
@@ -43,7 +57,7 @@ class DataCreator:
 
   def load_data(self):
     logger.info('Reading names and titles from file . . .')
-    data_path = os.path.join(get_script_path(), 'names_and_titles.json')
+    data_path = get_relative_path('names_and_titles.json')
     with open(data_path, 'r') as f:
       data = json.loads(f.read())
     logger.info('Done.')
@@ -74,63 +88,53 @@ class DataCreator:
       name = (random.choice(self.females_names), random.choice(self.males_names))
     return name
 
-  def format_user_data(self, index, first_name, last_name):
-    return """
-      {0}:
-        id: {0}
-        email: {1}.{2}@gmail.com
-        encrypted_password: "$2a$10$KMYs9whkhl1uLyeJSqMFLutp.K6f0zZuPp0V4A7Pgy1ihZjV71lR6"
-        user: {1} {2}
-    """.format(index, first_name, last_name)
+  def format_user_data(self, name, index, first_name, last_name):
+    return """{0}:
+      user_name: {2} {3}
+      email: {2}.{3}@gmail.com
+      encrypted_password: "$2a$10$KMYs9whkhl1uLyeJSqMFLutp.K6f0zZuPp0V4A7Pgy1ihZjV71lR6"
+      <<: *DEFAULTS""".format(name, index, first_name, last_name)
 
   def format_genre_data(self, index, genre):
-    return """
-      {0}:
-        id: {0}
-        name: {1}
-    """.format(index, genre)
+    return """{1}:
+      name: {1}
+      <<: *DEFAULTS""".format(index, genre)
 
-  def format_novel_data(self, index, title, user_name, genres, abstract=''):
-    return """
-      {0}:
-        id: {0}
-        title: {1}
-        user: {2}
-        genres: {3}
-        abstract: |-
-          {4}
-    """.format(index, title, user_name, genres, abstract)
+  def format_novel_data(self, name, index, title, user_name, genres, abstract=''):
+    genres_str = format_list(genres)
+    return """{0}:
+      title: {2}
+      user: {3}
+      genres: {4}
+      <<: *DEFAULTS
+      abstract: |-
+        {5}""".format(name, index, title, user_name, genres_str, abstract)
 
-  def format_chapter_data(self, index, title, chapter_no, parent_name, novel_name, user_name, abstract='', content=''):
-    return """
-      {0}:
-        id: {0}
-        title: {1}
-        chapter_no: {2}
-        parent: {3}
-        novel: {4}
-        user: {5}
-        abstract: |-
-          {6}
-        content: |-
-          {7}
-    """.format(index, title, chapter_no, parent_name, novel_name, user_name, abstract, content)
+  def format_chapter_data(self, name, index, title, chapter_no, parent_name, novel_name, user_name, abstract='', content=''):
+    return """{0}:
+      title: {2}
+      chapter_no: {3}
+      parent: {4}
+      novel: {5}
+      user: {6}
+      <<: *DEFAULTS
+      abstract: |-
+        {7}
+      content: |-
+        {8}""".format(name, index, title, chapter_no, parent_name, novel_name, user_name, abstract, content)
 
   def format_read_chapter_data(self, index, user_name, chapter_name):
-    return """
-      ReadChapter_{0}:
-        id: {0}
-        user: {1}
-        chapter: {2}
-    """.format(index, user_name, chapter_name)
+    return """ReadChapter_{0}:
+      user: {1}
+      chapter: {2}
+      <<: *DEFAULTS""".format(index, user_name, chapter_name)
 
   def format_liked_chapter_data(self, index, user_name, chapter_name):
-    return """
-      LikedChapter_{0}:
-        id: {0}
-        user: {1}
-        chapter: {2}
-    """.format(index, user_name, chapter_name)
+    return """LikedChapter_{0}:
+      id: {0}
+      user: {1}
+      chapter: {2}
+      <<: *DEFAULTS""".format(index, user_name, chapter_name)
 
   def create_users(self):
     logger.info('Creating %s users.' % NUMBER_OF_USERS)
@@ -165,7 +169,7 @@ class DataCreator:
         'index': (i + 1),
         'title': title,
         'name': regex.sub('_', title),
-        'genres': str(novel_genres)[1:-2],
+        'genres': novel_genres,
         'abstract': 'Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut \
         id sed exercitation qui velit deserunt sed amet occaecat.'
       })
@@ -220,22 +224,30 @@ class DataCreator:
         'user': random.choice(self.users)['name']
       })
 
-  def add_chapters_levels_to_novels(self):
+  def add_chapters_to_novels(self):
     previous_level_chapters = []
     current_level_chapters = []
     for novel in self.novels:
-      for i in random.randint(MIN_NUMBR_OF_LEVELS, MAX_NUMBR_OF_LEVELS):
+      for i in xrange(random.randint(MIN_NUMBR_OF_LEVELS, MAX_NUMBR_OF_LEVELS)):
         chapter_number = (i + 1)
         previous_level_chapters = current_level_chapters
         current_level_chapters = []
-        for j in random.randint(MIN_NUMBER_OF_CHAPTERS_PER_LEVEL, MAX_NUMBER_OF_CHAPTERS_PER_LEVEL):
+        for j in xrange(random.randint(MIN_NUMBER_OF_CHAPTERS_PER_LEVEL, MAX_NUMBER_OF_CHAPTERS_PER_LEVEL)):
           chapter = self.get_chapter()
           current_level_chapters.append(chapter)
+          chapter['novel'] = novel['name']
           chapter['chapter_no'] = chapter_number
           if len(previous_level_chapters) == 0:
             chapter['parent'] = ''
           else:
             chapter['parent'] = random.choice(previous_level_chapters)['name']
+
+  def link_data(self):
+    self.add_users_to_novels()
+    self.add_users_to_chapters()
+    self.add_users_to_reads()
+    self.add_users_to_likes()
+    self.add_chapters_to_novels()
 
   def get_chapter(self):
     chapter = 'Default Chapter'
@@ -243,11 +255,92 @@ class DataCreator:
       chapter = random.choice(self.chapters)
     return chapter
 
+  def write_users(self):
+    path = get_relative_path(OUTPUT_DIR + 'users.yml')
+    with open(path, 'w') as f:
+      f.write(DEFAULT_CREATION_DATE + '\n')
+      for user in self.users:
+        # (self, name, index, first_name, last_name)
+        user_str = self.format_user_data(user['name'], user['index'], user['first_name'], user['last_name'])
+        f.write(user_str + '\n')
+
+  def write_genres(self):
+    path = get_relative_path(OUTPUT_DIR + 'genres.yml')
+    with open(path, 'w') as f:
+      f.write(DEFAULT_CREATION_DATE + '\n')
+      for genre in self.genres:
+        # (self, index, genre)
+        genre_str = self.format_genre_data(genre['index'], genre['genre'])
+        f.write(genre_str + '\n')
+
+  def write_novels(self):
+    path = get_relative_path(OUTPUT_DIR + 'novels.yml')
+    with open(path, 'w') as f:
+      f.write(DEFAULT_CREATION_DATE + '\n')
+      for novel in self.novels:
+        # (self, name, index, title, user_name, genres, abstract='')
+        novel_str = self.format_novel_data(
+          novel['name'],
+          novel['index'],
+          novel['title'],
+          novel['user'],
+          novel['genres'],
+          novel['abstract']
+        )
+        f.write(novel_str + '\n')
+
+  def write_chapters(self):
+    path = get_relative_path(OUTPUT_DIR + 'chapters.yml')
+    with open(path, 'w') as f:
+      f.write(DEFAULT_CREATION_DATE + '\n')
+      for chapter in self.chapters:
+        # (self, name, index, title, chapter_no, parent_name, novel_name, user_name, abstract='', content='')
+        if 'chapter_no' not in chapter:
+          continue
+        chapter_str = self.format_chapter_data(
+          chapter['name'],
+          chapter['index'],
+          chapter['title'],
+          chapter['chapter_no'],
+          chapter['parent'],
+          chapter['novel'],
+          chapter['user'],
+          chapter['abstract'],
+          chapter['content'],
+        )
+        f.write(chapter_str + '\n')
+
+  def write_read_chapters(self):
+    path = get_relative_path(OUTPUT_DIR + 'read_chapters.yml')
+    with open(path, 'w') as f:
+      f.write(DEFAULT_CREATION_DATE + '\n')
+      for read_chapter in self.read_chapters:
+        # (self, index, user_name, chapter_name):
+        read_chapter_str = self.format_read_chapter_data(read_chapter['index'], read_chapter['user'], read_chapter['chapter'])
+        f.write(read_chapter_str + '\n')
+
+  def write_liked_chapters(self):
+    path = get_relative_path(OUTPUT_DIR + 'liked_chapters.yml')
+    with open(path, 'w') as f:
+      f.write(DEFAULT_CREATION_DATE + '\n')
+      for liked_chapter in self.liked_chapters:
+        # (self, index, user_name, chapter_name):
+        liked_chapter_str = self.format_liked_chapter_data(liked_chapter['index'], liked_chapter['user'], liked_chapter['chapter'])
+        f.write(liked_chapter_str + '\n')
+
+  def write_output(self):
+    self.write_users()
+    self.write_genres()
+    self.write_novels()
+    self.write_chapters()
+    self.write_liked_chapters()
+    self.write_read_chapters()
+
   def start(self):
     logger.info('Started Creating Data for Testing . . .')
     self.create_initial_data()
-    self.add_users_to_novels()
-    self.add_users_to_chapters()
+    self.link_data()
+    self.write_output()
     logger.info('Done.')
 
 

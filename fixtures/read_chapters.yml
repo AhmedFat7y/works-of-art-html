@@ -1,0 +1,1963 @@
+---
+DEFAULTS: &DEFAULTS
+  created_at: <%= 3.weeks.ago.to_s(:db) %>
+ReadChapter_1:
+      user: Hassan_Zak
+      chapter: nothing
+      <<: *DEFAULTS
+ReadChapter_2:
+      user: Franciszek_Andrej
+      chapter: The_matrix
+      <<: *DEFAULTS
+ReadChapter_3:
+      user: Tamati_Elias
+      chapter: Dragon_s_teeth
+      <<: *DEFAULTS
+ReadChapter_4:
+      user: Alikhan_David
+      chapter: Saber
+      <<: *DEFAULTS
+ReadChapter_5:
+      user: Hassan_Zak
+      chapter: Sessho_seki
+      <<: *DEFAULTS
+ReadChapter_6:
+      user: Hassan_Zak
+      chapter: Enuma_Elish
+      <<: *DEFAULTS
+ReadChapter_7:
+      user: Mehmet_Daniel
+      chapter: devil_s_triangle
+      <<: *DEFAULTS
+ReadChapter_8:
+      user: Luka_Ethan
+      chapter: hahaha
+      <<: *DEFAULTS
+ReadChapter_9:
+      user: Angel_Theo
+      chapter: Counter_Gaurdian
+      <<: *DEFAULTS
+ReadChapter_10:
+      user: Ahmad_Ivan
+      chapter: Rare_Pepes
+      <<: *DEFAULTS
+ReadChapter_11:
+      user: Mehmet_Daniel
+      chapter: Assassin
+      <<: *DEFAULTS
+ReadChapter_12:
+      user: Jack_Yong
+      chapter: romman
+      <<: *DEFAULTS
+ReadChapter_13:
+      user: Angel_Theo
+      chapter: Angra_Mainyu
+      <<: *DEFAULTS
+ReadChapter_14:
+      user: Nathan_Abdullo
+      chapter: Nado_talks__everyone_listens
+      <<: *DEFAULTS
+ReadChapter_15:
+      user: Franciszek_Andrej
+      chapter: hunt
+      <<: *DEFAULTS
+ReadChapter_16:
+      user: Tim_Iker
+      chapter: The_chosen
+      <<: *DEFAULTS
+ReadChapter_17:
+      user: Ahmad_Ivan
+      chapter: The_headless_Driver
+      <<: *DEFAULTS
+ReadChapter_18:
+      user: Karim_Murad
+      chapter: Gate_Of_Babylon
+      <<: *DEFAULTS
+ReadChapter_19:
+      user: Aputsiaq_Amar
+      chapter: why_not
+      <<: *DEFAULTS
+ReadChapter_20:
+      user: Karim_Murad
+      chapter: Holy_War
+      <<: *DEFAULTS
+ReadChapter_21:
+      user: Nathan_Abdullo
+      chapter: Rho_Aias
+      <<: *DEFAULTS
+ReadChapter_22:
+      user: Jack_Yong
+      chapter: The_origin
+      <<: *DEFAULTS
+ReadChapter_23:
+      user: Mason_Alessandro
+      chapter: Future_Gadget
+      <<: *DEFAULTS
+ReadChapter_24:
+      user: Alikhan_David
+      chapter: The_prestige
+      <<: *DEFAULTS
+ReadChapter_25:
+      user: Mehmet_Daniel
+      chapter: The_sad_mummy
+      <<: *DEFAULTS
+ReadChapter_26:
+      user: Alexander_David
+      chapter: Greed_&_desires
+      <<: *DEFAULTS
+ReadChapter_27:
+      user: Ahmad_Ivan
+      chapter: Fate_Zero
+      <<: *DEFAULTS
+ReadChapter_28:
+      user: Tim_Iker
+      chapter: Unicorns
+      <<: *DEFAULTS
+ReadChapter_29:
+      user: Mohammad_William
+      chapter: Geass_Powers
+      <<: *DEFAULTS
+ReadChapter_30:
+      user: Lucas_Mathis
+      chapter: Majd
+      <<: *DEFAULTS
+ReadChapter_31:
+      user: Karim_Murad
+      chapter: Water_Bender
+      <<: *DEFAULTS
+ReadChapter_32:
+      user: Karim_Murad
+      chapter: Caster
+      <<: *DEFAULTS
+ReadChapter_33:
+      user: Tamati_Elias
+      chapter: Blade_&_soul
+      <<: *DEFAULTS
+ReadChapter_34:
+      user: Luka_Ethan
+      chapter: Necklace_of_Harmonia
+      <<: *DEFAULTS
+ReadChapter_35:
+      user: Lucas_Mathis
+      chapter: hide
+      <<: *DEFAULTS
+ReadChapter_36:
+      user: Roberts_Arata
+      chapter: Superhero
+      <<: *DEFAULTS
+ReadChapter_37:
+      user: Franciszek_Andrej
+      chapter: Illusionist
+      <<: *DEFAULTS
+ReadChapter_38:
+      user: Tim_Iker
+      chapter: war_
+      <<: *DEFAULTS
+ReadChapter_39:
+      user: Tim_Iker
+      chapter: forever
+      <<: *DEFAULTS
+ReadChapter_40:
+      user: Karim_Murad
+      chapter: Osam__the_journey_to_A+
+      <<: *DEFAULTS
+ReadChapter_41:
+      user: Nathan_Abdullo
+      chapter: tuturuuu
+      <<: *DEFAULTS
+ReadChapter_42:
+      user: Hassan_Zak
+      chapter: traps
+      <<: *DEFAULTS
+ReadChapter_43:
+      user: Aputsiaq_Amar
+      chapter: Human_Sword
+      <<: *DEFAULTS
+ReadChapter_44:
+      user: Ahmad_Ivan
+      chapter: Medea
+      <<: *DEFAULTS
+ReadChapter_45:
+      user: Aputsiaq_Amar
+      chapter: Power_of_the_king
+      <<: *DEFAULTS
+ReadChapter_46:
+      user: Mohammad_William
+      chapter: Dragon_Slayer
+      <<: *DEFAULTS
+ReadChapter_47:
+      user: Kungawo_Miguel
+      chapter: run_away
+      <<: *DEFAULTS
+ReadChapter_48:
+      user: Nathan_Abdullo
+      chapter: Mana
+      <<: *DEFAULTS
+ReadChapter_49:
+      user: Angel_Theo
+      chapter: Death_Note
+      <<: *DEFAULTS
+ReadChapter_50:
+      user: Mehmet_Daniel
+      chapter: peace
+      <<: *DEFAULTS
+ReadChapter_51:
+      user: Mason_Alessandro
+      chapter: noble_phantasm
+      <<: *DEFAULTS
+ReadChapter_52:
+      user: Mohammad_William
+      chapter: Chaos_Labyrinth
+      <<: *DEFAULTS
+ReadChapter_53:
+      user: Tim_Iker
+      chapter: Life_sucks
+      <<: *DEFAULTS
+ReadChapter_54:
+      user: Nathan_Abdullo
+      chapter: Seal_of_Solomon
+      <<: *DEFAULTS
+ReadChapter_55:
+      user: Mohammad_William
+      chapter: easy_prey
+      <<: *DEFAULTS
+ReadChapter_56:
+      user: Nathan_Abdullo
+      chapter: Mad_Scientist
+      <<: *DEFAULTS
+ReadChapter_57:
+      user: Aputsiaq_Amar
+      chapter: Silver_Branch
+      <<: *DEFAULTS
+ReadChapter_58:
+      user: Tim_Iker
+      chapter: hell_yeah
+      <<: *DEFAULTS
+ReadChapter_59:
+      user: Tamati_Elias
+      chapter: Immortality
+      <<: *DEFAULTS
+ReadChapter_60:
+      user: Nathan_Abdullo
+      chapter: Hello
+      <<: *DEFAULTS
+ReadChapter_61:
+      user: Luka_Ethan
+      chapter: miserable
+      <<: *DEFAULTS
+ReadChapter_62:
+      user: Alexander_David
+      chapter: Artemis_&_the_powerful_Bow
+      <<: *DEFAULTS
+ReadChapter_63:
+      user: Mohammad_William
+      chapter: Excalibur
+      <<: *DEFAULTS
+ReadChapter_64:
+      user: Kungawo_Miguel
+      chapter: deaths
+      <<: *DEFAULTS
+ReadChapter_65:
+      user: Hassan_Zak
+      chapter: Sage_of_six_paths
+      <<: *DEFAULTS
+ReadChapter_66:
+      user: Luka_Ethan
+      chapter: sure_
+      <<: *DEFAULTS
+ReadChapter_67:
+      user: Lucas_Mathis
+      chapter: Rinnegan
+      <<: *DEFAULTS
+ReadChapter_68:
+      user: Aputsiaq_Amar
+      chapter: Steins;gate
+      <<: *DEFAULTS
+ReadChapter_69:
+      user: Ahmad_Ivan
+      chapter: World
+      <<: *DEFAULTS
+ReadChapter_70:
+      user: Nathan_Abdullo
+      chapter: Command_Seal
+      <<: *DEFAULTS
+ReadChapter_71:
+      user: Mohammad_William
+      chapter: Vampire
+      <<: *DEFAULTS
+ReadChapter_72:
+      user: Mehmet_Daniel
+      chapter: doge_vs_pepe
+      <<: *DEFAULTS
+ReadChapter_73:
+      user: Siddhartha_Marko
+      chapter: Cursed_Spirit
+      <<: *DEFAULTS
+ReadChapter_74:
+      user: Tim_Iker
+      chapter: Medusa
+      <<: *DEFAULTS
+ReadChapter_75:
+      user: Angel_Theo
+      chapter: Masks_&_True_Nature
+      <<: *DEFAULTS
+ReadChapter_76:
+      user: Mason_Alessandro
+      chapter: no_more
+      <<: *DEFAULTS
+ReadChapter_77:
+      user: Luka_Ethan
+      chapter: The_Pirates
+      <<: *DEFAULTS
+ReadChapter_78:
+      user: Angel_Theo
+      chapter: fight
+      <<: *DEFAULTS
+ReadChapter_79:
+      user: Tamati_Elias
+      chapter: Jiji_and_the_lost_lobes
+      <<: *DEFAULTS
+ReadChapter_80:
+      user: Ahmad_Ivan
+      chapter: The_Pursuit_Of_Diarmuid_And_Grainne
+      <<: *DEFAULTS
+ReadChapter_81:
+      user: Franciszek_Andrej
+      chapter: The_Dagda
+      <<: *DEFAULTS
+ReadChapter_82:
+      user: Mason_Alessandro
+      chapter: today
+      <<: *DEFAULTS
+ReadChapter_83:
+      user: Aputsiaq_Amar
+      chapter: Sharingan
+      <<: *DEFAULTS
+ReadChapter_84:
+      user: Alexander_David
+      chapter: shaco
+      <<: *DEFAULTS
+ReadChapter_85:
+      user: Tamati_Elias
+      chapter: Archer
+      <<: *DEFAULTS
+ReadChapter_86:
+      user: Kungawo_Miguel
+      chapter: Pandora_s_box
+      <<: *DEFAULTS
+ReadChapter_87:
+      user: Angel_Theo
+      chapter: tonight
+      <<: *DEFAULTS
+ReadChapter_88:
+      user: Tim_Iker
+      chapter: shinigami
+      <<: *DEFAULTS
+ReadChapter_89:
+      user: Lucas_Mathis
+      chapter: cycle_of_vengeance
+      <<: *DEFAULTS
+ReadChapter_90:
+      user: Kungawo_Miguel
+      chapter: Shinigami_s_scythe
+      <<: *DEFAULTS
+ReadChapter_91:
+      user: Siddhartha_Marko
+      chapter: no_one
+      <<: *DEFAULTS
+ReadChapter_92:
+      user: Alikhan_David
+      chapter: Unicorn_horn
+      <<: *DEFAULTS
+ReadChapter_93:
+      user: Mehmet_Daniel
+      chapter: Kraken
+      <<: *DEFAULTS
+ReadChapter_94:
+      user: Roberts_Arata
+      chapter: Curse_of_the_black_pearl
+      <<: *DEFAULTS
+ReadChapter_95:
+      user: Mehmet_Daniel
+      chapter: Pashupatastra
+      <<: *DEFAULTS
+ReadChapter_96:
+      user: Luka_Ethan
+      chapter: King_of_conqueres
+      <<: *DEFAULTS
+ReadChapter_97:
+      user: Siddhartha_Marko
+      chapter: The_Samurai
+      <<: *DEFAULTS
+ReadChapter_98:
+      user: Roberts_Arata
+      chapter: The_present
+      <<: *DEFAULTS
+ReadChapter_99:
+      user: Lucas_Mathis
+      chapter: Unlimited_Blade_Works
+      <<: *DEFAULTS
+ReadChapter_100:
+      user: Jack_Yong
+      chapter: berserker
+      <<: *DEFAULTS
+ReadChapter_101:
+      user: Ahmad_Ivan
+      chapter: Lernaean_Hydra
+      <<: *DEFAULTS
+ReadChapter_102:
+      user: Tim_Iker
+      chapter: rofl
+      <<: *DEFAULTS
+ReadChapter_103:
+      user: Lucas_Mathis
+      chapter: Philosopher_s_stone
+      <<: *DEFAULTS
+ReadChapter_104:
+      user: Angel_Theo
+      chapter: Necromancer
+      <<: *DEFAULTS
+ReadChapter_105:
+      user: Siddhartha_Marko
+      chapter: Kris_Mpu_Gandring
+      <<: *DEFAULTS
+ReadChapter_106:
+      user: Kungawo_Miguel
+      chapter: Nine_lives_Blade
+      <<: *DEFAULTS
+ReadChapter_107:
+      user: Alexander_David
+      chapter: Gilgamesh
+      <<: *DEFAULTS
+ReadChapter_108:
+      user: Kungawo_Miguel
+      chapter: Trace_on
+      <<: *DEFAULTS
+ReadChapter_109:
+      user: Karim_Murad
+      chapter: Are_Cats_Spies_Sent_by_Aliens
+      <<: *DEFAULTS
+ReadChapter_110:
+      user: Kungawo_Miguel
+      chapter: Pegasus
+      <<: *DEFAULTS
+ReadChapter_111:
+      user: Jack_Yong
+      chapter: Absolute_obedience
+      <<: *DEFAULTS
+ReadChapter_112:
+      user: Alikhan_David
+      chapter: Winnie_Pooh
+      <<: *DEFAULTS
+ReadChapter_113:
+      user: Angel_Theo
+      chapter: Rule_Breaker
+      <<: *DEFAULTS
+ReadChapter_114:
+      user: Alexander_David
+      chapter: everything
+      <<: *DEFAULTS
+ReadChapter_115:
+      user: Karim_Murad
+      chapter: Chaos_theory
+      <<: *DEFAULTS
+ReadChapter_116:
+      user: Roberts_Arata
+      chapter: The_Ninja_Assassin
+      <<: *DEFAULTS
+ReadChapter_117:
+      user: Luka_Ethan
+      chapter: Gae_Bolg
+      <<: *DEFAULTS
+ReadChapter_118:
+      user: Mason_Alessandro
+      chapter: no_way
+      <<: *DEFAULTS
+ReadChapter_119:
+      user: Mohammad_William
+      chapter: rengar
+      <<: *DEFAULTS
+ReadChapter_120:
+      user: Aputsiaq_Amar
+      chapter: Requiem_for_Death
+      <<: *DEFAULTS
+ReadChapter_121:
+      user: Siddhartha_Marko
+      chapter: fight_&_today
+      <<: *DEFAULTS
+ReadChapter_122:
+      user: Luka_Ethan
+      chapter: Vampire_&_rofl
+      <<: *DEFAULTS
+ReadChapter_123:
+      user: Roberts_Arata
+      chapter: shinigami_&_World
+      <<: *DEFAULTS
+ReadChapter_124:
+      user: Mehmet_Daniel
+      chapter: berserker_&_rengar
+      <<: *DEFAULTS
+ReadChapter_125:
+      user: Jack_Yong
+      chapter: shinigami_&_deaths
+      <<: *DEFAULTS
+ReadChapter_126:
+      user: Kungawo_Miguel
+      chapter: tuturuuu_&_rofl
+      <<: *DEFAULTS
+ReadChapter_127:
+      user: Hassan_Zak
+      chapter: Nen_&_World
+      <<: *DEFAULTS
+ReadChapter_128:
+      user: Kungawo_Miguel
+      chapter: Majd_&_Immortality
+      <<: *DEFAULTS
+ReadChapter_129:
+      user: Jack_Yong
+      chapter: tonight_&_Bellerophon
+      <<: *DEFAULTS
+ReadChapter_130:
+      user: Tamati_Elias
+      chapter: Superhero_&_deaths
+      <<: *DEFAULTS
+ReadChapter_131:
+      user: Lucas_Mathis
+      chapter: Hello_&_Nen
+      <<: *DEFAULTS
+ReadChapter_132:
+      user: Mason_Alessandro
+      chapter: Steins;gate_&_Bellerophon
+      <<: *DEFAULTS
+ReadChapter_133:
+      user: Franciszek_Andrej
+      chapter: shinigami_&_shinigami
+      <<: *DEFAULTS
+ReadChapter_134:
+      user: Hassan_Zak
+      chapter: Kraken_&_fight
+      <<: *DEFAULTS
+ReadChapter_135:
+      user: Mohammad_William
+      chapter: Steins;gate_&_Sharingan
+      <<: *DEFAULTS
+ReadChapter_136:
+      user: Roberts_Arata
+      chapter: Unicorns_&_Sessho_seki
+      <<: *DEFAULTS
+ReadChapter_137:
+      user: Angel_Theo
+      chapter: everything_&_Necromancer
+      <<: *DEFAULTS
+ReadChapter_138:
+      user: Mohammad_William
+      chapter: Pashupatastra_&_hahaha
+      <<: *DEFAULTS
+ReadChapter_139:
+      user: Roberts_Arata
+      chapter: everything_&_fight
+      <<: *DEFAULTS
+ReadChapter_140:
+      user: Alexander_David
+      chapter: Jinshuriky_&_Hollow
+      <<: *DEFAULTS
+ReadChapter_141:
+      user: Nathan_Abdullo
+      chapter: Jinshuriky_&_shaco
+      <<: *DEFAULTS
+ReadChapter_142:
+      user: Tamati_Elias
+      chapter: everything_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_143:
+      user: Mason_Alessandro
+      chapter: Excalibur_&_hunt
+      <<: *DEFAULTS
+ReadChapter_144:
+      user: Alikhan_David
+      chapter: Superhero_&_Necromancer
+      <<: *DEFAULTS
+ReadChapter_145:
+      user: Franciszek_Andrej
+      chapter: Sharingan_&_Superhero
+      <<: *DEFAULTS
+ReadChapter_146:
+      user: Franciszek_Andrej
+      chapter: traps_&_everything
+      <<: *DEFAULTS
+ReadChapter_147:
+      user: Mehmet_Daniel
+      chapter: Medusa_&_Jinshuriky
+      <<: *DEFAULTS
+ReadChapter_148:
+      user: Karim_Murad
+      chapter: Sessho_seki_&_romman
+      <<: *DEFAULTS
+ReadChapter_149:
+      user: Tamati_Elias
+      chapter: rofl_&_peace
+      <<: *DEFAULTS
+ReadChapter_150:
+      user: Jack_Yong
+      chapter: tonight_&_Assassin
+      <<: *DEFAULTS
+ReadChapter_151:
+      user: Jack_Yong
+      chapter: Caster_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_152:
+      user: Siddhartha_Marko
+      chapter: miserable_&_World
+      <<: *DEFAULTS
+ReadChapter_153:
+      user: Alexander_David
+      chapter: tuturuuu_&_Bellerophon
+      <<: *DEFAULTS
+ReadChapter_154:
+      user: Karim_Murad
+      chapter: Assassin_&_forever
+      <<: *DEFAULTS
+ReadChapter_155:
+      user: Alikhan_David
+      chapter: rofl_&_Assassin
+      <<: *DEFAULTS
+ReadChapter_156:
+      user: Jack_Yong
+      chapter: tonight_&_today
+      <<: *DEFAULTS
+ReadChapter_157:
+      user: Lucas_Mathis
+      chapter: Rinnegan_&_Archer
+      <<: *DEFAULTS
+ReadChapter_158:
+      user: Hassan_Zak
+      chapter: lol_&_hide
+      <<: *DEFAULTS
+ReadChapter_159:
+      user: Alikhan_David
+      chapter: everything_&_Steins;gate
+      <<: *DEFAULTS
+ReadChapter_160:
+      user: Tamati_Elias
+      chapter: fight_&_Nen
+      <<: *DEFAULTS
+ReadChapter_161:
+      user: Tamati_Elias
+      chapter: Jinshuriky_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_162:
+      user: Mason_Alessandro
+      chapter: Necromancer_&_hide
+      <<: *DEFAULTS
+ReadChapter_163:
+      user: Mehmet_Daniel
+      chapter: Superhero_&_berserker
+      <<: *DEFAULTS
+ReadChapter_164:
+      user: Franciszek_Andrej
+      chapter: Caster_&_Pashupatastra
+      <<: *DEFAULTS
+ReadChapter_165:
+      user: Tim_Iker
+      chapter: nothing_&_fight
+      <<: *DEFAULTS
+ReadChapter_166:
+      user: Luka_Ethan
+      chapter: hunt_&_rofl
+      <<: *DEFAULTS
+ReadChapter_167:
+      user: Tim_Iker
+      chapter: deaths_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_168:
+      user: Angel_Theo
+      chapter: peace_&_peace
+      <<: *DEFAULTS
+ReadChapter_169:
+      user: Tim_Iker
+      chapter: Sharingan_&_Jinshuriky
+      <<: *DEFAULTS
+ReadChapter_170:
+      user: Karim_Murad
+      chapter: traps_&_hunt
+      <<: *DEFAULTS
+ReadChapter_171:
+      user: Jack_Yong
+      chapter: Bellerophon_&_hahaha
+      <<: *DEFAULTS
+ReadChapter_172:
+      user: Nathan_Abdullo
+      chapter: hunt_&_Caster
+      <<: *DEFAULTS
+ReadChapter_173:
+      user: Tamati_Elias
+      chapter: Kraken_&_today
+      <<: *DEFAULTS
+ReadChapter_174:
+      user: Hassan_Zak
+      chapter: Saber_&_Majd
+      <<: *DEFAULTS
+ReadChapter_175:
+      user: Luka_Ethan
+      chapter: today_&_Jinshuriky
+      <<: *DEFAULTS
+ReadChapter_176:
+      user: Siddhartha_Marko
+      chapter: hunt_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_177:
+      user: Siddhartha_Marko
+      chapter: hide_&_Hello
+      <<: *DEFAULTS
+ReadChapter_178:
+      user: Aputsiaq_Amar
+      chapter: Gilgamesh_&_Vampire
+      <<: *DEFAULTS
+ReadChapter_179:
+      user: Angel_Theo
+      chapter: today_&_forever
+      <<: *DEFAULTS
+ReadChapter_180:
+      user: Nathan_Abdullo
+      chapter: Necromancer_&_rengar
+      <<: *DEFAULTS
+ReadChapter_181:
+      user: Nathan_Abdullo
+      chapter: Medusa_&_fight
+      <<: *DEFAULTS
+ReadChapter_182:
+      user: Nathan_Abdullo
+      chapter: shinigami_&_today
+      <<: *DEFAULTS
+ReadChapter_183:
+      user: Lucas_Mathis
+      chapter: today_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_184:
+      user: Franciszek_Andrej
+      chapter: Sharingan_&_Vampire
+      <<: *DEFAULTS
+ReadChapter_185:
+      user: Karim_Murad
+      chapter: World_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_186:
+      user: Nathan_Abdullo
+      chapter: Medusa_&_tonight
+      <<: *DEFAULTS
+ReadChapter_187:
+      user: Tim_Iker
+      chapter: nothing_&_shaco
+      <<: *DEFAULTS
+ReadChapter_188:
+      user: Alikhan_David
+      chapter: Medea_&_Mana
+      <<: *DEFAULTS
+ReadChapter_189:
+      user: Ahmad_Ivan
+      chapter: Illusionist_&_Kraken
+      <<: *DEFAULTS
+ReadChapter_190:
+      user: Hassan_Zak
+      chapter: World_&_Sharingan
+      <<: *DEFAULTS
+ReadChapter_191:
+      user: Siddhartha_Marko
+      chapter: Sessho_seki_&_Medusa
+      <<: *DEFAULTS
+ReadChapter_192:
+      user: Roberts_Arata
+      chapter: Majd_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_193:
+      user: Mohammad_William
+      chapter: hunt_&_Necromancer
+      <<: *DEFAULTS
+ReadChapter_194:
+      user: Aputsiaq_Amar
+      chapter: Unicorns_&_berserker
+      <<: *DEFAULTS
+ReadChapter_195:
+      user: Aputsiaq_Amar
+      chapter: Caster_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_196:
+      user: Jack_Yong
+      chapter: hide_&_Jinshuriky
+      <<: *DEFAULTS
+ReadChapter_197:
+      user: Aputsiaq_Amar
+      chapter: Majd_&_shinigami
+      <<: *DEFAULTS
+ReadChapter_198:
+      user: Tamati_Elias
+      chapter: hunt_&_peace
+      <<: *DEFAULTS
+ReadChapter_199:
+      user: Karim_Murad
+      chapter: World_&_Superhero
+      <<: *DEFAULTS
+ReadChapter_200:
+      user: Alikhan_David
+      chapter: hide_&_Mana
+      <<: *DEFAULTS
+ReadChapter_201:
+      user: Siddhartha_Marko
+      chapter: rofl_&_miserable
+      <<: *DEFAULTS
+ReadChapter_202:
+      user: Lucas_Mathis
+      chapter: traps_&_traps
+      <<: *DEFAULTS
+ReadChapter_203:
+      user: Nathan_Abdullo
+      chapter: Archer_&_traps
+      <<: *DEFAULTS
+ReadChapter_204:
+      user: Mehmet_Daniel
+      chapter: Sharingan_&_rengar
+      <<: *DEFAULTS
+ReadChapter_205:
+      user: Franciszek_Andrej
+      chapter: tuturuuu_&_Hello
+      <<: *DEFAULTS
+ReadChapter_206:
+      user: Siddhartha_Marko
+      chapter: Bellerophon_&_Archer
+      <<: *DEFAULTS
+ReadChapter_207:
+      user: Alexander_David
+      chapter: Dragons_&_berserker
+      <<: *DEFAULTS
+ReadChapter_208:
+      user: Karim_Murad
+      chapter: hide_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_209:
+      user: Luka_Ethan
+      chapter: Rinnegan_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_210:
+      user: Angel_Theo
+      chapter: Kraken_&_traps
+      <<: *DEFAULTS
+ReadChapter_211:
+      user: Lucas_Mathis
+      chapter: Archer_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_212:
+      user: Aputsiaq_Amar
+      chapter: peace_&_tonight
+      <<: *DEFAULTS
+ReadChapter_213:
+      user: Lucas_Mathis
+      chapter: Pashupatastra_&_fight
+      <<: *DEFAULTS
+ReadChapter_214:
+      user: Luka_Ethan
+      chapter: forever_&_Hollow
+      <<: *DEFAULTS
+ReadChapter_215:
+      user: Alexander_David
+      chapter: Necromancer_&_tonight
+      <<: *DEFAULTS
+ReadChapter_216:
+      user: Nathan_Abdullo
+      chapter: hahaha_&_Sharingan
+      <<: *DEFAULTS
+ReadChapter_217:
+      user: Mohammad_William
+      chapter: today_&_Steins;gate
+      <<: *DEFAULTS
+ReadChapter_218:
+      user: Mohammad_William
+      chapter: Hello_&_Kraken
+      <<: *DEFAULTS
+ReadChapter_219:
+      user: Tamati_Elias
+      chapter: Medea_&_Archer
+      <<: *DEFAULTS
+ReadChapter_220:
+      user: Siddhartha_Marko
+      chapter: shaco_&_deaths
+      <<: *DEFAULTS
+ReadChapter_221:
+      user: Franciszek_Andrej
+      chapter: tonight_&_Rinnegan
+      <<: *DEFAULTS
+ReadChapter_222:
+      user: Luka_Ethan
+      chapter: Jinshuriky_&_Kraken
+      <<: *DEFAULTS
+ReadChapter_223:
+      user: Tamati_Elias
+      chapter: Pashupatastra_&_today
+      <<: *DEFAULTS
+ReadChapter_224:
+      user: Nathan_Abdullo
+      chapter: Medea_&_Superhero
+      <<: *DEFAULTS
+ReadChapter_225:
+      user: Ahmad_Ivan
+      chapter: today_&_Medea
+      <<: *DEFAULTS
+ReadChapter_226:
+      user: Angel_Theo
+      chapter: Kraken_&_everything
+      <<: *DEFAULTS
+ReadChapter_227:
+      user: Luka_Ethan
+      chapter: hahaha_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_228:
+      user: Alexander_David
+      chapter: World_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_229:
+      user: Aputsiaq_Amar
+      chapter: Immortality_&_Vampire
+      <<: *DEFAULTS
+ReadChapter_230:
+      user: Lucas_Mathis
+      chapter: lol_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_231:
+      user: Aputsiaq_Amar
+      chapter: hunt_&_hunt
+      <<: *DEFAULTS
+ReadChapter_232:
+      user: Nathan_Abdullo
+      chapter: Medusa_&_Majd
+      <<: *DEFAULTS
+ReadChapter_233:
+      user: Angel_Theo
+      chapter: deaths_&_Superhero
+      <<: *DEFAULTS
+ReadChapter_234:
+      user: Mohammad_William
+      chapter: traps_&_shinigami
+      <<: *DEFAULTS
+ReadChapter_235:
+      user: Hassan_Zak
+      chapter: Immortality_&_Assassin
+      <<: *DEFAULTS
+ReadChapter_236:
+      user: Aputsiaq_Amar
+      chapter: Mana_&_miserable
+      <<: *DEFAULTS
+ReadChapter_237:
+      user: Angel_Theo
+      chapter: Necromancer_&_Gilgamesh
+      <<: *DEFAULTS
+ReadChapter_238:
+      user: Jack_Yong
+      chapter: berserker_&_fight
+      <<: *DEFAULTS
+ReadChapter_239:
+      user: Kungawo_Miguel
+      chapter: today_&_Gilgamesh
+      <<: *DEFAULTS
+ReadChapter_240:
+      user: Mohammad_William
+      chapter: World_&_Hello
+      <<: *DEFAULTS
+ReadChapter_241:
+      user: Luka_Ethan
+      chapter: forever_&_Medea
+      <<: *DEFAULTS
+ReadChapter_242:
+      user: Kungawo_Miguel
+      chapter: lol_&_Bellerophon
+      <<: *DEFAULTS
+ReadChapter_243:
+      user: Aputsiaq_Amar
+      chapter: nothing_&_Sharingan
+      <<: *DEFAULTS
+ReadChapter_244:
+      user: Siddhartha_Marko
+      chapter: Superhero_&_hunt
+      <<: *DEFAULTS
+ReadChapter_245:
+      user: Alexander_David
+      chapter: Medusa_&_Archer
+      <<: *DEFAULTS
+ReadChapter_246:
+      user: Siddhartha_Marko
+      chapter: Medusa_&_Gilgamesh
+      <<: *DEFAULTS
+ReadChapter_247:
+      user: Luka_Ethan
+      chapter: Medea_&_berserker
+      <<: *DEFAULTS
+ReadChapter_248:
+      user: Angel_Theo
+      chapter: Rinnegan_&_rofl
+      <<: *DEFAULTS
+ReadChapter_249:
+      user: Alexander_David
+      chapter: miserable_&_fight
+      <<: *DEFAULTS
+ReadChapter_250:
+      user: Alikhan_David
+      chapter: Unicorns_&_Vampire
+      <<: *DEFAULTS
+ReadChapter_251:
+      user: Ahmad_Ivan
+      chapter: Hello_&_Sharingan
+      <<: *DEFAULTS
+ReadChapter_252:
+      user: Siddhartha_Marko
+      chapter: Mana_&_Rinnegan
+      <<: *DEFAULTS
+ReadChapter_253:
+      user: Nathan_Abdullo
+      chapter: Pashupatastra_&_Excalibur
+      <<: *DEFAULTS
+ReadChapter_254:
+      user: Kungawo_Miguel
+      chapter: Unicorns_&_rengar
+      <<: *DEFAULTS
+ReadChapter_255:
+      user: Franciszek_Andrej
+      chapter: rofl_&_romman
+      <<: *DEFAULTS
+ReadChapter_256:
+      user: Lucas_Mathis
+      chapter: everything_&_Excalibur
+      <<: *DEFAULTS
+ReadChapter_257:
+      user: Angel_Theo
+      chapter: Dragons_&_rengar
+      <<: *DEFAULTS
+ReadChapter_258:
+      user: Luka_Ethan
+      chapter: hahaha_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_259:
+      user: Tim_Iker
+      chapter: Vampire_&_World
+      <<: *DEFAULTS
+ReadChapter_260:
+      user: Kungawo_Miguel
+      chapter: Bellerophon_&_Hollow
+      <<: *DEFAULTS
+ReadChapter_261:
+      user: Alikhan_David
+      chapter: Archer_&_Vampire
+      <<: *DEFAULTS
+ReadChapter_262:
+      user: Alexander_David
+      chapter: berserker_&_Medea
+      <<: *DEFAULTS
+ReadChapter_263:
+      user: Lucas_Mathis
+      chapter: Nen_&_Vampire
+      <<: *DEFAULTS
+ReadChapter_264:
+      user: Alexander_David
+      chapter: everything_&_Hello
+      <<: *DEFAULTS
+ReadChapter_265:
+      user: Nathan_Abdullo
+      chapter: shinigami_&_Sessho_seki
+      <<: *DEFAULTS
+ReadChapter_266:
+      user: Hassan_Zak
+      chapter: World_&_World
+      <<: *DEFAULTS
+ReadChapter_267:
+      user: Franciszek_Andrej
+      chapter: Superhero_&_Pashupatastra
+      <<: *DEFAULTS
+ReadChapter_268:
+      user: Mehmet_Daniel
+      chapter: rofl_&_Sharingan
+      <<: *DEFAULTS
+ReadChapter_269:
+      user: Nathan_Abdullo
+      chapter: Saber_&_rengar
+      <<: *DEFAULTS
+ReadChapter_270:
+      user: Ahmad_Ivan
+      chapter: today_&_today
+      <<: *DEFAULTS
+ReadChapter_271:
+      user: Alexander_David
+      chapter: Sharingan_&_lol
+      <<: *DEFAULTS
+ReadChapter_272:
+      user: Siddhartha_Marko
+      chapter: Superhero_&_Majd
+      <<: *DEFAULTS
+ReadChapter_273:
+      user: Tim_Iker
+      chapter: today_&_Hollow
+      <<: *DEFAULTS
+ReadChapter_274:
+      user: Nathan_Abdullo
+      chapter: Hollow_&_shaco
+      <<: *DEFAULTS
+ReadChapter_275:
+      user: Jack_Yong
+      chapter: tonight_&_Sessho_seki
+      <<: *DEFAULTS
+ReadChapter_276:
+      user: Tim_Iker
+      chapter: today_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_277:
+      user: Luka_Ethan
+      chapter: Necromancer_&_shinigami
+      <<: *DEFAULTS
+ReadChapter_278:
+      user: Mason_Alessandro
+      chapter: World_&_today
+      <<: *DEFAULTS
+ReadChapter_279:
+      user: Alikhan_David
+      chapter: Necromancer_&_Hello
+      <<: *DEFAULTS
+ReadChapter_280:
+      user: Alikhan_David
+      chapter: berserker_&_lol
+      <<: *DEFAULTS
+ReadChapter_281:
+      user: Mehmet_Daniel
+      chapter: tuturuuu_&_Jinshuriky
+      <<: *DEFAULTS
+ReadChapter_282:
+      user: Aputsiaq_Amar
+      chapter: Nen_&_shinigami
+      <<: *DEFAULTS
+ReadChapter_283:
+      user: Angel_Theo
+      chapter: Excalibur_&_Rinnegan
+      <<: *DEFAULTS
+ReadChapter_284:
+      user: Alikhan_David
+      chapter: Medusa_&_shaco
+      <<: *DEFAULTS
+ReadChapter_285:
+      user: Aputsiaq_Amar
+      chapter: fight_&_Excalibur
+      <<: *DEFAULTS
+ReadChapter_286:
+      user: Mehmet_Daniel
+      chapter: forever_&_Superhero
+      <<: *DEFAULTS
+ReadChapter_287:
+      user: Alexander_David
+      chapter: deaths_&_Hello
+      <<: *DEFAULTS
+ReadChapter_288:
+      user: Karim_Murad
+      chapter: Caster_&_berserker
+      <<: *DEFAULTS
+ReadChapter_289:
+      user: Tamati_Elias
+      chapter: forever_&_rofl
+      <<: *DEFAULTS
+ReadChapter_290:
+      user: Roberts_Arata
+      chapter: Assassin_&_Steins;gate
+      <<: *DEFAULTS
+ReadChapter_291:
+      user: Alikhan_David
+      chapter: today_&_Mana
+      <<: *DEFAULTS
+ReadChapter_292:
+      user: Siddhartha_Marko
+      chapter: rengar_&_romman
+      <<: *DEFAULTS
+ReadChapter_293:
+      user: Mason_Alessandro
+      chapter: Illusionist_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_294:
+      user: Aputsiaq_Amar
+      chapter: Sharingan_&_everything
+      <<: *DEFAULTS
+ReadChapter_295:
+      user: Nathan_Abdullo
+      chapter: World_&_deaths
+      <<: *DEFAULTS
+ReadChapter_296:
+      user: Mason_Alessandro
+      chapter: Archer_&_miserable
+      <<: *DEFAULTS
+ReadChapter_297:
+      user: Siddhartha_Marko
+      chapter: hunt_&_Saber
+      <<: *DEFAULTS
+ReadChapter_298:
+      user: Franciszek_Andrej
+      chapter: Sessho_seki_&_Saber
+      <<: *DEFAULTS
+ReadChapter_299:
+      user: Aputsiaq_Amar
+      chapter: hide_&_fight
+      <<: *DEFAULTS
+ReadChapter_300:
+      user: Kungawo_Miguel
+      chapter: Vampire_&_Kraken
+      <<: *DEFAULTS
+ReadChapter_301:
+      user: Franciszek_Andrej
+      chapter: Assassin_&_Medusa
+      <<: *DEFAULTS
+ReadChapter_302:
+      user: Ahmad_Ivan
+      chapter: hide_&_Nen
+      <<: *DEFAULTS
+ReadChapter_303:
+      user: Tamati_Elias
+      chapter: Sharingan_&_Immortality
+      <<: *DEFAULTS
+ReadChapter_304:
+      user: Siddhartha_Marko
+      chapter: nothing_&_rengar
+      <<: *DEFAULTS
+ReadChapter_305:
+      user: Alikhan_David
+      chapter: Superhero_&_Excalibur
+      <<: *DEFAULTS
+ReadChapter_306:
+      user: Lucas_Mathis
+      chapter: Excalibur_&_Immortality
+      <<: *DEFAULTS
+ReadChapter_307:
+      user: Mehmet_Daniel
+      chapter: tonight_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_308:
+      user: Kungawo_Miguel
+      chapter: Bellerophon_&_Majd
+      <<: *DEFAULTS
+ReadChapter_309:
+      user: Tim_Iker
+      chapter: Hollow_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_310:
+      user: Franciszek_Andrej
+      chapter: hide_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_311:
+      user: Roberts_Arata
+      chapter: Illusionist_&_hahaha
+      <<: *DEFAULTS
+ReadChapter_312:
+      user: Luka_Ethan
+      chapter: Superhero_&_Nen
+      <<: *DEFAULTS
+ReadChapter_313:
+      user: Ahmad_Ivan
+      chapter: World_&_Assassin
+      <<: *DEFAULTS
+ReadChapter_314:
+      user: Siddhartha_Marko
+      chapter: Sessho_seki_&_peace
+      <<: *DEFAULTS
+ReadChapter_315:
+      user: Angel_Theo
+      chapter: lol_&_rofl
+      <<: *DEFAULTS
+ReadChapter_316:
+      user: Aputsiaq_Amar
+      chapter: hide_&_Necromancer
+      <<: *DEFAULTS
+ReadChapter_317:
+      user: Ahmad_Ivan
+      chapter: Medusa_&_hide
+      <<: *DEFAULTS
+ReadChapter_318:
+      user: Mohammad_William
+      chapter: peace_&_hunt
+      <<: *DEFAULTS
+ReadChapter_319:
+      user: Tim_Iker
+      chapter: Excalibur_&_Saber
+      <<: *DEFAULTS
+ReadChapter_320:
+      user: Karim_Murad
+      chapter: Necromancer_&_peace
+      <<: *DEFAULTS
+ReadChapter_321:
+      user: Lucas_Mathis
+      chapter: Unicorns_&_Medea
+      <<: *DEFAULTS
+ReadChapter_322:
+      user: Mason_Alessandro
+      chapter: romman_&_hide
+      <<: *DEFAULTS
+ReadChapter_323:
+      user: Lucas_Mathis
+      chapter: traps_&_Majd
+      <<: *DEFAULTS
+ReadChapter_324:
+      user: Luka_Ethan
+      chapter: Saber_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_325:
+      user: Siddhartha_Marko
+      chapter: Excalibur_&_Jinshuriky
+      <<: *DEFAULTS
+ReadChapter_326:
+      user: Alikhan_David
+      chapter: Assassin_&_shaco
+      <<: *DEFAULTS
+ReadChapter_327:
+      user: Mason_Alessandro
+      chapter: Bellerophon_&_Sessho_seki
+      <<: *DEFAULTS
+ReadChapter_328:
+      user: Ahmad_Ivan
+      chapter: Hello_&_forever
+      <<: *DEFAULTS
+ReadChapter_329:
+      user: Mehmet_Daniel
+      chapter: World_&_hunt
+      <<: *DEFAULTS
+ReadChapter_330:
+      user: Tamati_Elias
+      chapter: Immortality_&_Medea
+      <<: *DEFAULTS
+ReadChapter_331:
+      user: Franciszek_Andrej
+      chapter: peace_&_Archer
+      <<: *DEFAULTS
+ReadChapter_332:
+      user: Angel_Theo
+      chapter: Illusionist_&_hunt
+      <<: *DEFAULTS
+ReadChapter_333:
+      user: Tamati_Elias
+      chapter: everything_&_tonight
+      <<: *DEFAULTS
+ReadChapter_334:
+      user: Franciszek_Andrej
+      chapter: berserker_&_Excalibur
+      <<: *DEFAULTS
+ReadChapter_335:
+      user: Mohammad_William
+      chapter: Jinshuriky_&_nothing
+      <<: *DEFAULTS
+ReadChapter_336:
+      user: Ahmad_Ivan
+      chapter: hunt_&_Archer
+      <<: *DEFAULTS
+ReadChapter_337:
+      user: Kungawo_Miguel
+      chapter: tonight_&_Mana
+      <<: *DEFAULTS
+ReadChapter_338:
+      user: Aputsiaq_Amar
+      chapter: hahaha_&_hide
+      <<: *DEFAULTS
+ReadChapter_339:
+      user: Franciszek_Andrej
+      chapter: Medea_&_Hello
+      <<: *DEFAULTS
+ReadChapter_340:
+      user: Nathan_Abdullo
+      chapter: Necromancer_&_Excalibur
+      <<: *DEFAULTS
+ReadChapter_341:
+      user: Aputsiaq_Amar
+      chapter: Immortality_&_rofl
+      <<: *DEFAULTS
+ReadChapter_342:
+      user: Jack_Yong
+      chapter: Pashupatastra_&_rengar
+      <<: *DEFAULTS
+ReadChapter_343:
+      user: Kungawo_Miguel
+      chapter: Gilgamesh_&_hahaha
+      <<: *DEFAULTS
+ReadChapter_344:
+      user: Karim_Murad
+      chapter: Mana_&_fight
+      <<: *DEFAULTS
+ReadChapter_345:
+      user: Aputsiaq_Amar
+      chapter: romman_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_346:
+      user: Angel_Theo
+      chapter: traps_&_lol
+      <<: *DEFAULTS
+ReadChapter_347:
+      user: Tamati_Elias
+      chapter: shinigami_&_Hello
+      <<: *DEFAULTS
+ReadChapter_348:
+      user: Mohammad_William
+      chapter: forever_&_fight
+      <<: *DEFAULTS
+ReadChapter_349:
+      user: Mohammad_William
+      chapter: Saber_&_Vampire
+      <<: *DEFAULTS
+ReadChapter_350:
+      user: Angel_Theo
+      chapter: hahaha_&_Vampire
+      <<: *DEFAULTS
+ReadChapter_351:
+      user: Lucas_Mathis
+      chapter: rengar_&_Illusionist
+      <<: *DEFAULTS
+ReadChapter_352:
+      user: Alexander_David
+      chapter: Assassin_&_Rinnegan
+      <<: *DEFAULTS
+ReadChapter_353:
+      user: Roberts_Arata
+      chapter: Medea_&_Necromancer
+      <<: *DEFAULTS
+ReadChapter_354:
+      user: Tamati_Elias
+      chapter: hunt_&_World
+      <<: *DEFAULTS
+ReadChapter_355:
+      user: Alexander_David
+      chapter: Majd_&_forever
+      <<: *DEFAULTS
+ReadChapter_356:
+      user: Mehmet_Daniel
+      chapter: Sessho_seki_&_Medea
+      <<: *DEFAULTS
+ReadChapter_357:
+      user: Angel_Theo
+      chapter: Steins;gate_&_everything
+      <<: *DEFAULTS
+ReadChapter_358:
+      user: Ahmad_Ivan
+      chapter: Pashupatastra_&_Necromancer
+      <<: *DEFAULTS
+ReadChapter_359:
+      user: Hassan_Zak
+      chapter: Nen_&_fight
+      <<: *DEFAULTS
+ReadChapter_360:
+      user: Hassan_Zak
+      chapter: everything_&_Mana
+      <<: *DEFAULTS
+ReadChapter_361:
+      user: Alikhan_David
+      chapter: Necromancer_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_362:
+      user: Ahmad_Ivan
+      chapter: lol_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_363:
+      user: Hassan_Zak
+      chapter: hahaha_&_today
+      <<: *DEFAULTS
+ReadChapter_364:
+      user: Franciszek_Andrej
+      chapter: Gilgamesh_&_Gilgamesh
+      <<: *DEFAULTS
+ReadChapter_365:
+      user: Kungawo_Miguel
+      chapter: lol_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_366:
+      user: Karim_Murad
+      chapter: fight_&_nothing
+      <<: *DEFAULTS
+ReadChapter_367:
+      user: Mehmet_Daniel
+      chapter: Sessho_seki_&_shinigami
+      <<: *DEFAULTS
+ReadChapter_368:
+      user: Alikhan_David
+      chapter: Vampire_&_Caster
+      <<: *DEFAULTS
+ReadChapter_369:
+      user: Tim_Iker
+      chapter: Rinnegan_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_370:
+      user: Karim_Murad
+      chapter: Mana_&_everything
+      <<: *DEFAULTS
+ReadChapter_371:
+      user: Hassan_Zak
+      chapter: shaco_&_Kraken
+      <<: *DEFAULTS
+ReadChapter_372:
+      user: Tim_Iker
+      chapter: tuturuuu_&_fight
+      <<: *DEFAULTS
+ReadChapter_373:
+      user: Ahmad_Ivan
+      chapter: Kraken_&_rengar
+      <<: *DEFAULTS
+ReadChapter_374:
+      user: Hassan_Zak
+      chapter: Vampire_&_Archer
+      <<: *DEFAULTS
+ReadChapter_375:
+      user: Mason_Alessandro
+      chapter: tonight_&_Saber
+      <<: *DEFAULTS
+ReadChapter_376:
+      user: Kungawo_Miguel
+      chapter: deaths_&_Rinnegan
+      <<: *DEFAULTS
+ReadChapter_377:
+      user: Alikhan_David
+      chapter: nothing_&_miserable
+      <<: *DEFAULTS
+ReadChapter_378:
+      user: Luka_Ethan
+      chapter: tonight_&_Steins;gate
+      <<: *DEFAULTS
+ReadChapter_379:
+      user: Alikhan_David
+      chapter: forever_&_hahaha
+      <<: *DEFAULTS
+ReadChapter_380:
+      user: Aputsiaq_Amar
+      chapter: rofl_&_Medusa
+      <<: *DEFAULTS
+ReadChapter_381:
+      user: Roberts_Arata
+      chapter: forever_&_romman
+      <<: *DEFAULTS
+ReadChapter_382:
+      user: Aputsiaq_Amar
+      chapter: peace_&_Kraken
+      <<: *DEFAULTS
+ReadChapter_383:
+      user: Hassan_Zak
+      chapter: Saber_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_384:
+      user: Luka_Ethan
+      chapter: traps_&_Superhero
+      <<: *DEFAULTS
+ReadChapter_385:
+      user: Mohammad_William
+      chapter: forever_&_nothing
+      <<: *DEFAULTS
+ReadChapter_386:
+      user: Roberts_Arata
+      chapter: Immortality_&_fight
+      <<: *DEFAULTS
+ReadChapter_387:
+      user: Karim_Murad
+      chapter: forever_&_shinigami
+      <<: *DEFAULTS
+ReadChapter_388:
+      user: Tamati_Elias
+      chapter: Illusionist_&_Superhero
+      <<: *DEFAULTS
+ReadChapter_389:
+      user: Jack_Yong
+      chapter: hunt_&_Assassin
+      <<: *DEFAULTS
+ReadChapter_390:
+      user: Hassan_Zak
+      chapter: Mana_&_Sharingan
+      <<: *DEFAULTS
+ReadChapter_391:
+      user: Mehmet_Daniel
+      chapter: Nen_&_Bellerophon
+      <<: *DEFAULTS
+ReadChapter_392:
+      user: Luka_Ethan
+      chapter: rengar_&_Caster
+      <<: *DEFAULTS
+ReadChapter_393:
+      user: Alikhan_David
+      chapter: nothing_&_Rinnegan
+      <<: *DEFAULTS
+ReadChapter_394:
+      user: Hassan_Zak
+      chapter: shaco_&_Sessho_seki
+      <<: *DEFAULTS
+ReadChapter_395:
+      user: Kungawo_Miguel
+      chapter: berserker_&_Pashupatastra
+      <<: *DEFAULTS
+ReadChapter_396:
+      user: Alikhan_David
+      chapter: everything_&_Sessho_seki
+      <<: *DEFAULTS
+ReadChapter_397:
+      user: Karim_Murad
+      chapter: Caster_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_398:
+      user: Aputsiaq_Amar
+      chapter: Pegasus_&_Illusionist
+      <<: *DEFAULTS
+ReadChapter_399:
+      user: Franciszek_Andrej
+      chapter: Steins;gate_&_Archer
+      <<: *DEFAULTS
+ReadChapter_400:
+      user: Siddhartha_Marko
+      chapter: Dragons_&_lol
+      <<: *DEFAULTS
+ReadChapter_401:
+      user: Mehmet_Daniel
+      chapter: traps_&_forever
+      <<: *DEFAULTS
+ReadChapter_402:
+      user: Alexander_David
+      chapter: peace_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_403:
+      user: Jack_Yong
+      chapter: hide_&_Assassin
+      <<: *DEFAULTS
+ReadChapter_404:
+      user: Kungawo_Miguel
+      chapter: Mana_&_Pashupatastra
+      <<: *DEFAULTS
+ReadChapter_405:
+      user: Aputsiaq_Amar
+      chapter: Archer_&_Immortality
+      <<: *DEFAULTS
+ReadChapter_406:
+      user: Angel_Theo
+      chapter: Dragons_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_407:
+      user: Mehmet_Daniel
+      chapter: shinigami_&_Medea
+      <<: *DEFAULTS
+ReadChapter_408:
+      user: Mason_Alessandro
+      chapter: tonight_&_berserker
+      <<: *DEFAULTS
+ReadChapter_409:
+      user: Mason_Alessandro
+      chapter: miserable_&_hunt
+      <<: *DEFAULTS
+ReadChapter_410:
+      user: Alikhan_David
+      chapter: berserker_&_hide
+      <<: *DEFAULTS
+ReadChapter_411:
+      user: Karim_Murad
+      chapter: Medusa_&_traps
+      <<: *DEFAULTS
+ReadChapter_412:
+      user: Angel_Theo
+      chapter: Pashupatastra_&_Mana
+      <<: *DEFAULTS
+ReadChapter_413:
+      user: Hassan_Zak
+      chapter: tuturuuu_&_Rinnegan
+      <<: *DEFAULTS
+ReadChapter_414:
+      user: Kungawo_Miguel
+      chapter: Pashupatastra_&_Saber
+      <<: *DEFAULTS
+ReadChapter_415:
+      user: Lucas_Mathis
+      chapter: peace_&_Pashupatastra
+      <<: *DEFAULTS
+ReadChapter_416:
+      user: Kungawo_Miguel
+      chapter: shinigami_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_417:
+      user: Nathan_Abdullo
+      chapter: rengar_&_today
+      <<: *DEFAULTS
+ReadChapter_418:
+      user: Siddhartha_Marko
+      chapter: Steins;gate_&_Saber
+      <<: *DEFAULTS
+ReadChapter_419:
+      user: Kungawo_Miguel
+      chapter: forever_&_Medusa
+      <<: *DEFAULTS
+ReadChapter_420:
+      user: Mohammad_William
+      chapter: hahaha_&_hahaha
+      <<: *DEFAULTS
+ReadChapter_421:
+      user: Alikhan_David
+      chapter: Hollow_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_422:
+      user: Angel_Theo
+      chapter: tuturuuu_&_Pashupatastra
+      <<: *DEFAULTS
+ReadChapter_423:
+      user: Lucas_Mathis
+      chapter: deaths_&_Mana
+      <<: *DEFAULTS
+ReadChapter_424:
+      user: Karim_Murad
+      chapter: Excalibur_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_425:
+      user: Jack_Yong
+      chapter: Unicorns_&_Bellerophon
+      <<: *DEFAULTS
+ReadChapter_426:
+      user: Hassan_Zak
+      chapter: deaths_&_Unicorns
+      <<: *DEFAULTS
+ReadChapter_427:
+      user: Karim_Murad
+      chapter: berserker_&_Kraken
+      <<: *DEFAULTS
+ReadChapter_428:
+      user: Hassan_Zak
+      chapter: lol_&_Medea
+      <<: *DEFAULTS
+ReadChapter_429:
+      user: Alikhan_David
+      chapter: Bellerophon_&_shaco
+      <<: *DEFAULTS
+ReadChapter_430:
+      user: Nathan_Abdullo
+      chapter: today_&_Superhero
+      <<: *DEFAULTS
+ReadChapter_431:
+      user: Mehmet_Daniel
+      chapter: hide_&_Gilgamesh
+      <<: *DEFAULTS
+ReadChapter_432:
+      user: Siddhartha_Marko
+      chapter: Pashupatastra_&_lol
+      <<: *DEFAULTS
+ReadChapter_433:
+      user: Nathan_Abdullo
+      chapter: rofl_&_rofl
+      <<: *DEFAULTS
+ReadChapter_434:
+      user: Kungawo_Miguel
+      chapter: Excalibur_&_Hello
+      <<: *DEFAULTS
+ReadChapter_435:
+      user: Roberts_Arata
+      chapter: Rinnegan_&_Sharingan
+      <<: *DEFAULTS
+ReadChapter_436:
+      user: Siddhartha_Marko
+      chapter: Vampire_&_nothing
+      <<: *DEFAULTS
+ReadChapter_437:
+      user: Hassan_Zak
+      chapter: Medusa_&_Assassin
+      <<: *DEFAULTS
+ReadChapter_438:
+      user: Karim_Murad
+      chapter: hahaha_&_shinigami
+      <<: *DEFAULTS
+ReadChapter_439:
+      user: Kungawo_Miguel
+      chapter: Assassin_&_today
+      <<: *DEFAULTS
+ReadChapter_440:
+      user: Roberts_Arata
+      chapter: Hollow_&_hunt
+      <<: *DEFAULTS
+ReadChapter_441:
+      user: Siddhartha_Marko
+      chapter: tuturuuu_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_442:
+      user: Angel_Theo
+      chapter: Sharingan_&_berserker
+      <<: *DEFAULTS
+ReadChapter_443:
+      user: Kungawo_Miguel
+      chapter: Superhero_&_peace
+      <<: *DEFAULTS
+ReadChapter_444:
+      user: Jack_Yong
+      chapter: tonight_&_Sharingan
+      <<: *DEFAULTS
+ReadChapter_445:
+      user: Mason_Alessandro
+      chapter: rofl_&_Necromancer
+      <<: *DEFAULTS
+ReadChapter_446:
+      user: Kungawo_Miguel
+      chapter: Medusa_&_Kraken
+      <<: *DEFAULTS
+ReadChapter_447:
+      user: Angel_Theo
+      chapter: World_&_Excalibur
+      <<: *DEFAULTS
+ReadChapter_448:
+      user: Luka_Ethan
+      chapter: lol_&_Majd
+      <<: *DEFAULTS
+ReadChapter_449:
+      user: Mason_Alessandro
+      chapter: lol_&_peace
+      <<: *DEFAULTS
+ReadChapter_450:
+      user: Karim_Murad
+      chapter: Sharingan_&_deaths
+      <<: *DEFAULTS
+ReadChapter_451:
+      user: Mohammad_William
+      chapter: everything_&_Hollow
+      <<: *DEFAULTS
+ReadChapter_452:
+      user: Hassan_Zak
+      chapter: shinigami_&_Steins;gate
+      <<: *DEFAULTS
+ReadChapter_453:
+      user: Siddhartha_Marko
+      chapter: Superhero_&_tonight
+      <<: *DEFAULTS
+ReadChapter_454:
+      user: Tamati_Elias
+      chapter: nothing_&_tuturuuu
+      <<: *DEFAULTS
+ReadChapter_455:
+      user: Nathan_Abdullo
+      chapter: Vampire_&_lol
+      <<: *DEFAULTS
+ReadChapter_456:
+      user: Aputsiaq_Amar
+      chapter: Sharingan_&_traps
+      <<: *DEFAULTS
+ReadChapter_457:
+      user: Mohammad_William
+      chapter: Pashupatastra_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_458:
+      user: Karim_Murad
+      chapter: shaco_&_Majd
+      <<: *DEFAULTS
+ReadChapter_459:
+      user: Mehmet_Daniel
+      chapter: Caster_&_everything
+      <<: *DEFAULTS
+ReadChapter_460:
+      user: Nathan_Abdullo
+      chapter: Medusa_&_rengar
+      <<: *DEFAULTS
+ReadChapter_461:
+      user: Mohammad_William
+      chapter: Archer_&_hide
+      <<: *DEFAULTS
+ReadChapter_462:
+      user: Lucas_Mathis
+      chapter: peace_&_Assassin
+      <<: *DEFAULTS
+ReadChapter_463:
+      user: Siddhartha_Marko
+      chapter: rengar_&_Medusa
+      <<: *DEFAULTS
+ReadChapter_464:
+      user: Hassan_Zak
+      chapter: World_&_Bellerophon
+      <<: *DEFAULTS
+ReadChapter_465:
+      user: Mehmet_Daniel
+      chapter: tonight_&_rengar
+      <<: *DEFAULTS
+ReadChapter_466:
+      user: Alexander_David
+      chapter: today_&_everything
+      <<: *DEFAULTS
+ReadChapter_467:
+      user: Karim_Murad
+      chapter: Sharingan_&_Dragons
+      <<: *DEFAULTS
+ReadChapter_468:
+      user: Roberts_Arata
+      chapter: Archer_&_rofl
+      <<: *DEFAULTS
+ReadChapter_469:
+      user: Jack_Yong
+      chapter: Jinshuriky_&_miserable
+      <<: *DEFAULTS
+ReadChapter_470:
+      user: Mason_Alessandro
+      chapter: Kraken_&_Superhero
+      <<: *DEFAULTS
+ReadChapter_471:
+      user: Kungawo_Miguel
+      chapter: Vampire_&_Sessho_seki
+      <<: *DEFAULTS
+ReadChapter_472:
+      user: Aputsiaq_Amar
+      chapter: Nen_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_473:
+      user: Jack_Yong
+      chapter: Mana_&_Vampire
+      <<: *DEFAULTS
+ReadChapter_474:
+      user: Alikhan_David
+      chapter: Bellerophon_&_traps
+      <<: *DEFAULTS
+ReadChapter_475:
+      user: Siddhartha_Marko
+      chapter: Caster_&_Medusa
+      <<: *DEFAULTS
+ReadChapter_476:
+      user: Roberts_Arata
+      chapter: Mana_&_Illusionist
+      <<: *DEFAULTS
+ReadChapter_477:
+      user: Luka_Ethan
+      chapter: Medusa_&_Excalibur
+      <<: *DEFAULTS
+ReadChapter_478:
+      user: Tamati_Elias
+      chapter: romman_&_Nen
+      <<: *DEFAULTS
+ReadChapter_479:
+      user: Jack_Yong
+      chapter: tonight_&_peace
+      <<: *DEFAULTS
+ReadChapter_480:
+      user: Siddhartha_Marko
+      chapter: Necromancer_&_Steins;gate
+      <<: *DEFAULTS
+ReadChapter_481:
+      user: Franciszek_Andrej
+      chapter: Hollow_&_rengar
+      <<: *DEFAULTS
+ReadChapter_482:
+      user: Jack_Yong
+      chapter: Medea_&_Saber
+      <<: *DEFAULTS
+ReadChapter_483:
+      user: Angel_Theo
+      chapter: rofl_&_Pegasus
+      <<: *DEFAULTS
+ReadChapter_484:
+      user: Ahmad_Ivan
+      chapter: Jinshuriky_&_everything
+      <<: *DEFAULTS
+ReadChapter_485:
+      user: Angel_Theo
+      chapter: Necromancer_&_forever
+      <<: *DEFAULTS
+ReadChapter_486:
+      user: Mohammad_William
+      chapter: Gilgamesh_&_hunt
+      <<: *DEFAULTS
+ReadChapter_487:
+      user: Luka_Ethan
+      chapter: tuturuuu_&_lol
+      <<: *DEFAULTS
+ReadChapter_488:
+      user: Nathan_Abdullo
+      chapter: Majd_&_Medea
+      <<: *DEFAULTS
+ReadChapter_489:
+      user: Karim_Murad
+      chapter: everything_&_everything
+      <<: *DEFAULTS
+ReadChapter_490:
+      user: Alikhan_David
+      chapter: forever_&_forever
+      <<: *DEFAULTS

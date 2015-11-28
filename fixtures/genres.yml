@@ -1,0 +1,12 @@
+---
+DEFAULTS: &DEFAULTS
+  created_at: <%= 3.weeks.ago.to_s(:db) %>
+horror:
+      name: horror
+      <<: *DEFAULTS
+adventure:
+      name: adventure
+      <<: *DEFAULTS
+romance:
+      name: romance
+      <<: *DEFAULTS

@@ -1,0 +1,73 @@
+---
+DEFAULTS: &DEFAULTS
+  created_at: <%= 3.weeks.ago.to_s(:db) %>
+Jinshuriky:
+      title: Jinshuriky
+      user: Franciszek_Andrej
+      genres: horror,romance,romance,adventure
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
+Dragons:
+      title: Dragons
+      user: Ahmad_Ivan
+      genres: horror,horror,adventure,adventure
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
+Excalibur_s_scabbard:
+      title: Excalibur's scabbard
+      user: Alikhan_David
+      genres: horror,horror,adventure,horror
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
+Illuminati__myth_or_truth?:
+      title: Illuminati, myth or truth?
+      user: Alexander_David
+      genres: adventure,romance,adventure,adventure
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
+Time_Travel:
+      title: Time Travel
+      user: Roberts_Arata
+      genres: horror,adventure,horror,horror
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
+V_for_Vendetta:
+      title: V for Vendetta
+      user: Angel_Theo
+      genres: romance,romance,romance,adventure
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
+Hollow:
+      title: Hollow
+      user: Tim_Iker
+      genres: horror,romance,adventure,romance
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
+lol:
+      title: lol
+      user: Roberts_Arata
+      genres: horror,horror,romance,romance
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
+Who_cares:
+      title: Who cares
+      user: Angel_Theo
+      genres: adventure,adventure,adventure,horror
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
+4chan_vs_reddit:
+      title: 4chan vs reddit
+      user: Kungawo_Miguel
+      genres: romance,horror,horror,adventure
+      <<: *DEFAULTS
+      abstract: |-
+        Lorem ipsum Ut reprehenderit laboris magna irure magna pariatur in pariatur elit ut         id sed exercitation qui velit deserunt sed amet occaecat.
