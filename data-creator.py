@@ -2,6 +2,7 @@ import json
 import random
 import os
 import re
+import pdb
 
 from logger_wrapper import LoggingWrapper, get_script_path
 
@@ -229,6 +230,8 @@ class DataCreator:
     current_level_chapters = []
     for novel in self.novels:
       for i in xrange(random.randint(MIN_NUMBR_OF_LEVELS, MAX_NUMBR_OF_LEVELS)):
+        # logger.info(i)
+        # pdb.set_trace()
         chapter_number = (i + 1)
         previous_level_chapters = current_level_chapters
         current_level_chapters = []
@@ -241,6 +244,10 @@ class DataCreator:
             chapter['parent'] = ''
           else:
             chapter['parent'] = random.choice(previous_level_chapters)['name']
+          if chapter_number == 1:
+            break
+          # logger.info(current_level_chapters)
+          # pdb.set_trace()
 
   def link_data(self):
     self.add_users_to_novels()
